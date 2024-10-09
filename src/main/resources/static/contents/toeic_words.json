@@ -1,0 +1,1346 @@
+[
+  {
+    "word": "achieve",
+    "meaning": "달성하다"
+  },
+  {
+    "word": "acquire",
+    "meaning": "얻다, 습득하다"
+  },
+  {
+    "word": "adapt",
+    "meaning": "적응하다, 조정하다"
+  },
+  {
+    "word": "adjust",
+    "meaning": "조정하다, 맞추다"
+  },
+  {
+    "word": "administration",
+    "meaning": "관리, 행정"
+  },
+  {
+    "word": "advocate",
+    "meaning": "옹호하다, 지지하다"
+  },
+  {
+    "word": "allocate",
+    "meaning": "할당하다, 배분하다"
+  },
+  {
+    "word": "alternative",
+    "meaning": "대안, 선택 가능한"
+  },
+  {
+    "word": "analyze",
+    "meaning": "분석하다"
+  },
+  {
+    "word": "anticipate",
+    "meaning": "예상하다, 기대하다"
+  },
+  {
+    "word": "approach",
+    "meaning": "접근하다"
+  },
+  {
+    "word": "assess",
+    "meaning": "평가하다, 사정하다"
+  },
+  {
+    "word": "assist",
+    "meaning": "돕다"
+  },
+  {
+    "word": "assume",
+    "meaning": "추정하다, 가정하다"
+  },
+  {
+    "word": "assure",
+    "meaning": "보장하다, 확신시키다"
+  },
+  {
+    "word": "attach",
+    "meaning": "붙이다, 첨부하다"
+  },
+  {
+    "word": "attempt",
+    "meaning": "시도하다"
+  },
+  {
+    "word": "attend",
+    "meaning": "참석하다, 돌보다"
+  },
+  {
+    "word": "authorize",
+    "meaning": "승인하다, 권한을 부여하다"
+  },
+  {
+    "word": "available",
+    "meaning": "이용 가능한"
+  },
+  {
+    "word": "balance",
+    "meaning": "균형, 균형을 맞추다"
+  },
+  {
+    "word": "benefit",
+    "meaning": "혜택, 이익"
+  },
+  {
+    "word": "boost",
+    "meaning": "증가시키다, 향상하다"
+  },
+  {
+    "word": "budget",
+    "meaning": "예산"
+  },
+  {
+    "word": "candidate",
+    "meaning": "후보자"
+  },
+  {
+    "word": "capable",
+    "meaning": "능력 있는, 할 수 있는"
+  },
+  {
+    "word": "capacity",
+    "meaning": "용량, 능력"
+  },
+  {
+    "word": "capture",
+    "meaning": "포착하다, 붙잡다"
+  },
+  {
+    "word": "career",
+    "meaning": "직업, 경력"
+  },
+  {
+    "word": "category",
+    "meaning": "범주"
+  },
+  {
+    "word": "cause",
+    "meaning": "원인, 야기하다"
+  },
+  {
+    "word": "cease",
+    "meaning": "중단하다, 그만두다"
+  },
+  {
+    "word": "celebrate",
+    "meaning": "축하하다"
+  },
+  {
+    "word": "certify",
+    "meaning": "증명하다, 인증하다"
+  },
+  {
+    "word": "challenge",
+    "meaning": "도전하다, 도전"
+  },
+  {
+    "word": "change",
+    "meaning": "변화하다, 변경하다"
+  },
+  {
+    "word": "charge",
+    "meaning": "요금, 부과하다"
+  },
+  {
+    "word": "clarify",
+    "meaning": "명확하게 하다"
+  },
+  {
+    "word": "classify",
+    "meaning": "분류하다"
+  },
+  {
+    "word": "collaborate",
+    "meaning": "협력하다"
+  },
+  {
+    "word": "collect",
+    "meaning": "모으다, 수집하다"
+  },
+  {
+    "word": "combine",
+    "meaning": "결합하다, 합치다"
+  },
+  {
+    "word": "comfort",
+    "meaning": "위로하다, 편안함"
+  },
+  {
+    "word": "commence",
+    "meaning": "시작하다"
+  },
+  {
+    "word": "comment",
+    "meaning": "논평하다, 의견을 말하다"
+  },
+  {
+    "word": "commit",
+    "meaning": "전념하다, 약속하다"
+  },
+  {
+    "word": "communicate",
+    "meaning": "의사소통하다"
+  },
+  {
+    "word": "compare",
+    "meaning": "비교하다"
+  },
+  {
+    "word": "compete",
+    "meaning": "경쟁하다"
+  },
+  {
+    "word": "complain",
+    "meaning": "불평하다"
+  },
+  {
+    "word": "complete",
+    "meaning": "완성하다, 완료하다"
+  },
+  {
+    "word": "comply",
+    "meaning": "따르다, 준수하다"
+  },
+  {
+    "word": "compose",
+    "meaning": "구성하다, 작곡하다"
+  },
+  {
+    "word": "comprehend",
+    "meaning": "이해하다, 파악하다"
+  },
+  {
+    "word": "compromise",
+    "meaning": "타협하다, 절충하다"
+  },
+  {
+    "word": "conceal",
+    "meaning": "숨기다, 감추다"
+  },
+  {
+    "word": "concentrate",
+    "meaning": "집중하다"
+  },
+  {
+    "word": "concern",
+    "meaning": "관심, 걱정하다"
+  },
+  {
+    "word": "conclude",
+    "meaning": "결론을 내리다, 마치다"
+  },
+  {
+    "word": "conduct",
+    "meaning": "수행하다, 지휘하다"
+  },
+  {
+    "word": "confirm",
+    "meaning": "확인하다, 확정하다"
+  },
+  {
+    "word": "conform",
+    "meaning": "따르다, 순응하다"
+  },
+  {
+    "word": "connect",
+    "meaning": "연결하다"
+  },
+  {
+    "word": "conquer",
+    "meaning": "정복하다, 극복하다"
+  },
+  {
+    "word": "consider",
+    "meaning": "고려하다, 생각하다"
+  },
+  {
+    "word": "consist",
+    "meaning": "구성되다, 이루어지다"
+  },
+  {
+    "word": "consult",
+    "meaning": "상담하다, 조언을 구하다"
+  },
+  {
+    "word": "consume",
+    "meaning": "소비하다, 먹다"
+  },
+  {
+    "word": "contain",
+    "meaning": "포함하다, 담다"
+  },
+  {
+    "word": "continue",
+    "meaning": "계속하다"
+  },
+  {
+    "word": "contribute",
+    "meaning": "기여하다, 공헌하다"
+  },
+  {
+    "word": "control",
+    "meaning": "통제하다, 관리하다"
+  },
+  {
+    "word": "convene",
+    "meaning": "소집하다, 모이다"
+  },
+  {
+    "word": "convert",
+    "meaning": "변환하다, 전환하다"
+  },
+  {
+    "word": "convince",
+    "meaning": "납득시키다, 설득하다"
+  },
+  {
+    "word": "coordinate",
+    "meaning": "조정하다, 협력하다"
+  },
+  {
+    "word": "correct",
+    "meaning": "수정하다, 바로잡다"
+  },
+  {
+    "word": "correlate",
+    "meaning": "상관관계가 있다, 관련시키다"
+  },
+  {
+    "word": "correspond",
+    "meaning": "일치하다, 서신을 주고받다"
+  },
+  {
+    "word": "create",
+    "meaning": "창조하다, 만들다"
+  },
+  {
+    "word": "criticize",
+    "meaning": "비판하다, 비난하다"
+  },
+  {
+    "word": "cultivate",
+    "meaning": "재배하다, 양성하다"
+  },
+  {
+    "word": "customize",
+    "meaning": "사용자 정의하다, 맞춤화하다"
+  },
+  {
+    "word": "damage",
+    "meaning": "손상, 손해를 입히다"
+  },
+  {
+    "word": "decrease",
+    "meaning": "감소하다, 줄이다"
+  },
+  {
+    "word": "dedicate",
+    "meaning": "헌신하다, 전념하다"
+  },
+  {
+    "word": "define",
+    "meaning": "정의하다, 규정하다"
+  },
+  {
+    "word": "delegate",
+    "meaning": "위임하다, 대표자"
+  },
+  {
+    "word": "deliver",
+    "meaning": "배달하다, 전달하다"
+  },
+  {
+    "word": "demand",
+    "meaning": "요구하다, 수요"
+  },
+  {
+    "word": "demonstrate",
+    "meaning": "증명하다, 시연하다"
+  },
+  {
+    "word": "deny",
+    "meaning": "부인하다, 거부하다"
+  },
+  {
+    "word": "depend",
+    "meaning": "의존하다, 의지하다"
+  },
+  {
+    "word": "deploy",
+    "meaning": "배치하다, 전개하다"
+  },
+  {
+    "word": "derive",
+    "meaning": "유래하다, 도출하다"
+  },
+  {
+    "word": "design",
+    "meaning": "설계하다, 디자인하다"
+  },
+  {
+    "word": "desire",
+    "meaning": "바라다, 욕망"
+  },
+  {
+    "word": "determine",
+    "meaning": "결정하다, 알아내다"
+  },
+  {
+    "word": "develop",
+    "meaning": "개발하다, 성장하다"
+  },
+  {
+    "word": "devote",
+    "meaning": "헌신하다, 바치다"
+  },
+  {
+    "word": "differentiate",
+    "meaning": "구별하다, 차별화하다"
+  },
+  {
+    "word": "diminish",
+    "meaning": "줄어들다, 감소하다"
+  },
+  {
+    "word": "direct",
+    "meaning": "지시하다, 지도하다"
+  },
+  {
+    "word": "disagree",
+    "meaning": "동의하지 않다, 의견이 다르다"
+  },
+  {
+    "word": "disappear",
+    "meaning": "사라지다"
+  },
+  {
+    "word": "discover",
+    "meaning": "발견하다"
+  },
+  {
+    "word": "discuss",
+    "meaning": "논의하다"
+  },
+  {
+    "word": "dismiss",
+    "meaning": "해고하다, 묵살하다"
+  },
+  {
+    "word": "distribute",
+    "meaning": "분배하다, 배포하다"
+  },
+  {
+    "word": "diversify",
+    "meaning": "다각화하다, 다양화하다"
+  },
+  {
+    "word": "divide",
+    "meaning": "나누다, 분할하다"
+  },
+  {
+    "word": "document",
+    "meaning": "문서, 기록하다"
+  },
+  {
+    "word": "dominate",
+    "meaning": "지배하다, 우세하다"
+  },
+  {
+    "word": "donate",
+    "meaning": "기부하다, 기증하다"
+  },
+  {
+    "word": "draft",
+    "meaning": "초안, 설계하다"
+  },
+  {
+    "word": "earn",
+    "meaning": "벌다, 얻다"
+  },
+  {
+    "word": "educate",
+    "meaning": "교육하다"
+  },
+  {
+    "word": "elaborate",
+    "meaning": "정교하게 만들다, 상세히 설명하다"
+  },
+  {
+    "word": "eliminate",
+    "meaning": "제거하다, 없애다"
+  },
+  {
+    "word": "emerge",
+    "meaning": "나타나다, 드러나다"
+  },
+  {
+    "word": "emphasize",
+    "meaning": "강조하다"
+  },
+  {
+    "word": "enable",
+    "meaning": "가능하게 하다"
+  },
+  {
+    "word": "encounter",
+    "meaning": "마주치다, 직면하다"
+  },
+  {
+    "word": "encourage",
+    "meaning": "격려하다, 장려하다"
+  },
+  {
+    "word": "endorse",
+    "meaning": "지지하다, 승인하다"
+  },
+  {
+    "word": "engage",
+    "meaning": "관여하다, 참여하다"
+  },
+  {
+    "word": "enhance",
+    "meaning": "향상시키다, 강화하다"
+  },
+  {
+    "word": "enlarge",
+    "meaning": "확대하다, 확장하다"
+  },
+  {
+    "word": "ensure",
+    "meaning": "확실하게 하다, 보장하다"
+  },
+  {
+    "word": "enter",
+    "meaning": "입력하다, 들어가다"
+  },
+  {
+    "word": "establish",
+    "meaning": "설립하다, 확립하다"
+  },
+  {
+    "word": "estimate",
+    "meaning": "추정하다, 평가하다"
+  },
+  {
+    "word": "evaluate",
+    "meaning": "평가하다, 감정하다"
+  },
+  {
+    "word": "evidence",
+    "meaning": "증거"
+  },
+  {
+    "word": "evolve",
+    "meaning": "진화하다, 발전하다"
+  },
+  {
+    "word": "examine",
+    "meaning": "검사하다, 조사하다"
+  },
+  {
+    "word": "exceed",
+    "meaning": "초과하다, 능가하다"
+  },
+  {
+    "word": "exchange",
+    "meaning": "교환하다, 환전하다"
+  },
+  {
+    "word": "execute",
+    "meaning": "실행하다, 처형하다"
+  },
+  {
+    "word": "exhibit",
+    "meaning": "전시하다, 나타내다"
+  },
+  {
+    "word": "expand",
+    "meaning": "확장하다, 넓히다"
+  },
+  {
+    "word": "expect",
+    "meaning": "기대하다, 예상하다"
+  },
+  {
+    "word": "expedite",
+    "meaning": "촉진하다, 신속히 처리하다"
+  },
+  {
+    "word": "experience",
+    "meaning": "경험하다, 겪다"
+  },
+  {
+    "word": "experiment",
+    "meaning": "실험하다"
+  },
+  {
+    "word": "explore",
+    "meaning": "탐험하다, 조사하다"
+  },
+  {
+    "word": "export",
+    "meaning": "수출하다"
+  },
+  {
+    "word": "express",
+    "meaning": "표현하다, 나타내다"
+  },
+  {
+    "word": "extend",
+    "meaning": "확장하다, 연장하다"
+  },
+  {
+    "word": "facilitate",
+    "meaning": "촉진하다, 용이하게 하다"
+  },
+  {
+    "word": "feature",
+    "meaning": "특징, 특징으로 하다"
+  },
+  {
+    "word": "finalize",
+    "meaning": "마무리하다, 완결하다"
+  },
+  {
+    "word": "finance",
+    "meaning": "재정, 자금을 조달하다"
+  },
+  {
+    "word": "focus",
+    "meaning": "집중하다, 초점"
+  },
+  {
+    "word": "forecast",
+    "meaning": "예측하다, 전망"
+  },
+  {
+    "word": "form",
+    "meaning": "형성하다, 형태"
+  },
+  {
+    "word": "formulate",
+    "meaning": "공식화하다, 만들어내다"
+  },
+  {
+    "word": "found",
+    "meaning": "설립하다, 세우다"
+  },
+  {
+    "word": "fulfill",
+    "meaning": "이행하다, 충족시키다"
+  },
+  {
+    "word": "function",
+    "meaning": "기능, 작동하다"
+  },
+  {
+    "word": "gain",
+    "meaning": "얻다, 이익"
+  },
+  {
+    "word": "gather",
+    "meaning": "모으다, 수집하다"
+  },
+  {
+    "word": "generate",
+    "meaning": "생성하다, 만들어내다"
+  },
+  {
+    "word": "govern",
+    "meaning": "통치하다, 지배하다"
+  },
+  {
+    "word": "handle",
+    "meaning": "처리하다, 다루다"
+  },
+  {
+    "word": "highlight",
+    "meaning": "강조하다, 하이라이트"
+  },
+  {
+    "word": "hire",
+    "meaning": "고용하다"
+  },
+  {
+    "word": "identify",
+    "meaning": "확인하다, 식별하다"
+  },
+  {
+    "word": "illustrate",
+    "meaning": "설명하다, 예증하다"
+  },
+  {
+    "word": "implement",
+    "meaning": "실행하다, 도구"
+  },
+  {
+    "word": "imply",
+    "meaning": "암시하다, 시사하다"
+  },
+  {
+    "word": "import",
+    "meaning": "수입하다, 의미"
+  },
+  {
+    "word": "improve",
+    "meaning": "개선하다, 향상시키다"
+  },
+  {
+    "word": "include",
+    "meaning": "포함하다"
+  },
+  {
+    "word": "increase",
+    "meaning": "증가시키다, 늘리다"
+  },
+  {
+    "word": "indicate",
+    "meaning": "나타내다, 보여주다"
+  },
+  {
+    "word": "influence",
+    "meaning": "영향을 미치다, 영향"
+  },
+  {
+    "word": "inform",
+    "meaning": "알리다, 통지하다"
+  },
+  {
+    "word": "initiate",
+    "meaning": "시작하다, 개시하다"
+  },
+  {
+    "word": "innovate",
+    "meaning": "혁신하다, 새롭게 하다"
+  },
+  {
+    "word": "inspect",
+    "meaning": "검사하다, 점검하다"
+  },
+  {
+    "word": "inspire",
+    "meaning": "영감을 주다, 고무하다"
+  },
+  {
+    "word": "install",
+    "meaning": "설치하다"
+  },
+  {
+    "word": "integrate",
+    "meaning": "통합하다, 결합하다"
+  },
+  {
+    "word": "intend",
+    "meaning": "의도하다, 계획하다"
+  },
+  {
+    "word": "interact",
+    "meaning": "상호작용하다"
+  },
+  {
+    "word": "interpret",
+    "meaning": "해석하다, 통역하다"
+  },
+  {
+    "word": "interrupt",
+    "meaning": "방해하다, 중단하다"
+  },
+  {
+    "word": "introduce",
+    "meaning": "소개하다, 도입하다"
+  },
+  {
+    "word": "invest",
+    "meaning": "투자하다"
+  },
+  {
+    "word": "investigate",
+    "meaning": "조사하다, 연구하다"
+  },
+  {
+    "word": "involve",
+    "meaning": "포함하다, 수반하다"
+  },
+  {
+    "word": "issue",
+    "meaning": "발행하다, 문제"
+  },
+  {
+    "word": "join",
+    "meaning": "참여하다, 연결하다"
+  },
+  {
+    "word": "justify",
+    "meaning": "정당화하다, 변명하다"
+  },
+  {
+    "word": "launch",
+    "meaning": "출시하다, 발사하다"
+  },
+  {
+    "word": "lead",
+    "meaning": "이끌다, 인도하다"
+  },
+  {
+    "word": "learn",
+    "meaning": "배우다, 학습하다"
+  },
+  {
+    "word": "legalize",
+    "meaning": "합법화하다"
+  },
+  {
+    "word": "liberalize",
+    "meaning": "자유화하다"
+  },
+  {
+    "word": "license",
+    "meaning": "면허, 허가하다"
+  },
+  {
+    "word": "limit",
+    "meaning": "제한하다, 한계"
+  },
+  {
+    "word": "link",
+    "meaning": "연결하다, 링크"
+  },
+  {
+    "word": "maintain",
+    "meaning": "유지하다, 주장하다"
+  },
+  {
+    "word": "manage",
+    "meaning": "관리하다, 다루다"
+  },
+  {
+    "word": "manufacture",
+    "meaning": "제조하다, 생산하다"
+  },
+  {
+    "word": "market",
+    "meaning": "시장, 마케팅하다"
+  },
+  {
+    "word": "measure",
+    "meaning": "측정하다, 조치"
+  },
+  {
+    "word": "mediate",
+    "meaning": "중재하다, 조정하다"
+  },
+  {
+    "word": "mention",
+    "meaning": "언급하다, 거론하다"
+  },
+  {
+    "word": "merge",
+    "meaning": "합병하다, 통합하다"
+  },
+  {
+    "word": "minimize",
+    "meaning": "최소화하다, 축소하다"
+  },
+  {
+    "word": "modify",
+    "meaning": "수정하다, 변경하다"
+  },
+  {
+    "word": "motivate",
+    "meaning": "동기부여하다, 자극하다"
+  },
+  {
+    "word": "negotiate",
+    "meaning": "협상하다, 교섭하다"
+  },
+  {
+    "word": "notify",
+    "meaning": "알리다, 통지하다"
+  },
+  {
+    "word": "observe",
+    "meaning": "관찰하다, 준수하다"
+  },
+  {
+    "word": "obtain",
+    "meaning": "얻다, 획득하다"
+  },
+  {
+    "word": "operate",
+    "meaning": "작동하다, 운영하다"
+  },
+  {
+    "word": "organize",
+    "meaning": "조직하다, 정리하다"
+  },
+  {
+    "word": "overcome",
+    "meaning": "극복하다, 이기다"
+  },
+  {
+    "word": "participate",
+    "meaning": "참여하다, 참가하다"
+  },
+  {
+    "word": "perform",
+    "meaning": "수행하다, 공연하다"
+  },
+  {
+    "word": "permit",
+    "meaning": "허가하다, 허용하다"
+  },
+  {
+    "word": "persuade",
+    "meaning": "설득하다, 납득시키다"
+  },
+  {
+    "word": "plan",
+    "meaning": "계획하다"
+  },
+  {
+    "word": "please",
+    "meaning": "기쁘게 하다, 만족시키다"
+  },
+  {
+    "word": "point",
+    "meaning": "가리키다, 요점"
+  },
+  {
+    "word": "predict",
+    "meaning": "예측하다, 예상하다"
+  },
+  {
+    "word": "prefer",
+    "meaning": "선호하다"
+  },
+  {
+    "word": "prepare",
+    "meaning": "준비하다"
+  },
+  {
+    "word": "preserve",
+    "meaning": "보존하다, 유지하다"
+  },
+  {
+    "word": "prevent",
+    "meaning": "방지하다, 막다"
+  },
+  {
+    "word": "prioritize",
+    "meaning": "우선시하다, 우선 순위를 매기다"
+  },
+  {
+    "word": "process",
+    "meaning": "처리하다, 과정"
+  },
+  {
+    "word": "produce",
+    "meaning": "생산하다, 만들어내다"
+  },
+  {
+    "word": "promote",
+    "meaning": "촉진하다, 승진시키다"
+  },
+  {
+    "word": "protect",
+    "meaning": "보호하다, 지키다"
+  },
+  {
+    "word": "provide",
+    "meaning": "제공하다, 공급하다"
+  },
+  {
+    "word": "publish",
+    "meaning": "출판하다, 발표하다"
+  },
+  {
+    "word": "purchase",
+    "meaning": "구매하다"
+  },
+  {
+    "word": "pursue",
+    "meaning": "추구하다, 뒤쫓다"
+  },
+  {
+    "word": "qualify",
+    "meaning": "자격을 갖추다, 제한하다"
+  },
+  {
+    "word": "quantify",
+    "meaning": "양을 재다, 수량화하다"
+  },
+  {
+    "word": "question",
+    "meaning": "질문하다, 의문"
+  },
+  {
+    "word": "quote",
+    "meaning": "인용하다, 견적을 내다"
+  },
+  {
+    "word": "raise",
+    "meaning": "올리다, 기르다"
+  },
+  {
+    "word": "realize",
+    "meaning": "깨닫다, 실현하다"
+  },
+  {
+    "word": "recognize",
+    "meaning": "인식하다, 인정하다"
+  },
+  {
+    "word": "recommend",
+    "meaning": "추천하다, 권하다"
+  },
+  {
+    "word": "reduce",
+    "meaning": "줄이다, 감소시키다"
+  },
+  {
+    "word": "refer",
+    "meaning": "언급하다, 참조하다"
+  },
+  {
+    "word": "reflect",
+    "meaning": "반영하다, 반사하다"
+  },
+  {
+    "word": "refuse",
+    "meaning": "거절하다, 거부하다"
+  },
+  {
+    "word": "regard",
+    "meaning": "간주하다, 주목하다"
+  },
+  {
+    "word": "regulate",
+    "meaning": "규제하다, 조절하다"
+  },
+  {
+    "word": "reinforce",
+    "meaning": "강화하다, 보강하다"
+  },
+  {
+    "word": "reject",
+    "meaning": "거절하다, 거부하다"
+  },
+  {
+    "word": "relate",
+    "meaning": "연관시키다, 관련이 있다"
+  },
+  {
+    "word": "release",
+    "meaning": "풀어주다, 출시하다"
+  },
+  {
+    "word": "rely",
+    "meaning": "의존하다, 믿다"
+  },
+  {
+    "word": "remain",
+    "meaning": "남다, 유지하다"
+  },
+  {
+    "word": "remark",
+    "meaning": "언급하다, 말하다"
+  },
+  {
+    "word": "remove",
+    "meaning": "제거하다, 없애다"
+  },
+  {
+    "word": "repair",
+    "meaning": "수리하다, 고치다"
+  },
+  {
+    "word": "replace",
+    "meaning": "대체하다, 교체하다"
+  },
+  {
+    "word": "represent",
+    "meaning": "대표하다, 나타내다"
+  },
+  {
+    "word": "require",
+    "meaning": "요구하다, 필요로 하다"
+  },
+  {
+    "word": "rescue",
+    "meaning": "구조하다, 구출하다"
+  },
+  {
+    "word": "research",
+    "meaning": "연구하다, 조사하다"
+  },
+  {
+    "word": "resolve",
+    "meaning": "해결하다, 결심하다"
+  },
+  {
+    "word": "respond",
+    "meaning": "응답하다, 반응하다"
+  },
+  {
+    "word": "restrict",
+    "meaning": "제한하다, 금지하다"
+  },
+  {
+    "word": "retain",
+    "meaning": "유지하다, 보유하다"
+  },
+  {
+    "word": "retrieve",
+    "meaning": "되찾다, 회수하다"
+  },
+  {
+    "word": "review",
+    "meaning": "검토하다, 평가하다"
+  },
+  {
+    "word": "revise",
+    "meaning": "수정하다, 개정하다"
+  },
+  {
+    "word": "rise",
+    "meaning": "오르다, 증가하다"
+  },
+  {
+    "word": "satisfy",
+    "meaning": "만족시키다"
+  },
+  {
+    "word": "schedule",
+    "meaning": "일정, 계획을 세우다"
+  },
+  {
+    "word": "secure",
+    "meaning": "안전하게 하다, 확보하다"
+  },
+  {
+    "word": "select",
+    "meaning": "선택하다, 선발하다"
+  },
+  {
+    "word": "separate",
+    "meaning": "분리하다, 나누다"
+  },
+  {
+    "word": "serve",
+    "meaning": "제공하다, 섬기다"
+  },
+  {
+    "word": "settle",
+    "meaning": "해결하다, 정착하다"
+  },
+  {
+    "word": "share",
+    "meaning": "공유하다, 나누다"
+  },
+  {
+    "word": "simplify",
+    "meaning": "단순화하다"
+  },
+  {
+    "word": "solve",
+    "meaning": "해결하다"
+  },
+  {
+    "word": "specify",
+    "meaning": "명시하다, 구체화하다"
+  },
+  {
+    "word": "sponsor",
+    "meaning": "후원하다, 스폰서"
+  },
+  {
+    "word": "start",
+    "meaning": "시작하다"
+  },
+  {
+    "word": "state",
+    "meaning": "상태, 말하다"
+  },
+  {
+    "word": "stimulate",
+    "meaning": "자극하다, 활발하게 하다"
+  },
+  {
+    "word": "structure",
+    "meaning": "구조, 조직하다"
+  },
+  {
+    "word": "submit",
+    "meaning": "제출하다, 복종하다"
+  },
+  {
+    "word": "suggest",
+    "meaning": "제안하다, 암시하다"
+  },
+  {
+    "word": "summarize",
+    "meaning": "요약하다"
+  },
+  {
+    "word": "supervise",
+    "meaning": "감독하다, 관리하다"
+  },
+  {
+    "word": "supply",
+    "meaning": "공급하다"
+  },
+  {
+    "word": "support",
+    "meaning": "지지하다, 지원하다"
+  },
+  {
+    "word": "suppress",
+    "meaning": "억누르다, 진압하다"
+  },
+  {
+    "word": "surpass",
+    "meaning": "능가하다, 초과하다"
+  },
+  {
+    "word": "survive",
+    "meaning": "생존하다, 살아남다"
+  },
+  {
+    "word": "suspend",
+    "meaning": "중단하다, 매달다"
+  },
+  {
+    "word": "sustain",
+    "meaning": "지탱하다, 유지하다"
+  },
+  {
+    "word": "synthesize",
+    "meaning": "합성하다, 종합하다"
+  },
+  {
+    "word": "target",
+    "meaning": "목표, 목표로 삼다"
+  },
+  {
+    "word": "teach",
+    "meaning": "가르치다"
+  },
+  {
+    "word": "terminate",
+    "meaning": "종결하다, 끝내다"
+  },
+  {
+    "word": "testify",
+    "meaning": "증언하다, 증명하다"
+  },
+  {
+    "word": "train",
+    "meaning": "훈련하다, 교육하다"
+  },
+  {
+    "word": "transfer",
+    "meaning": "옮기다, 이동하다"
+  },
+  {
+    "word": "transform",
+    "meaning": "변형하다, 바꾸다"
+  },
+  {
+    "word": "translate",
+    "meaning": "번역하다, 해석하다"
+  },
+  {
+    "word": "transmit",
+    "meaning": "전송하다, 전달하다"
+  },
+  {
+    "word": "transport",
+    "meaning": "운송하다, 수송하다"
+  },
+  {
+    "word": "undergo",
+    "meaning": "겪다, 경험하다"
+  },
+  {
+    "word": "understand",
+    "meaning": "이해하다, 알아듣다"
+  },
+  {
+    "word": "undertake",
+    "meaning": "착수하다, 떠맡다"
+  },
+  {
+    "word": "unite",
+    "meaning": "통합하다, 연합하다"
+  },
+  {
+    "word": "update",
+    "meaning": "갱신하다, 최신 정보"
+  },
+  {
+    "word": "upgrade",
+    "meaning": "업그레이드하다, 개선하다"
+  },
+  {
+    "word": "uphold",
+    "meaning": "지지하다, 유지하다"
+  },
+  {
+    "word": "use",
+    "meaning": "사용하다"
+  },
+  {
+    "word": "utilize",
+    "meaning": "활용하다, 이용하다"
+  },
+  {
+    "word": "validate",
+    "meaning": "유효하게 하다, 확인하다"
+  },
+  {
+    "word": "value",
+    "meaning": "가치, 평가하다"
+  },
+  {
+    "word": "verify",
+    "meaning": "확인하다, 검증하다"
+  },
+  {
+    "word": "view",
+    "meaning": "보다, 관점"
+  },
+  {
+    "word": "visit",
+    "meaning": "방문하다"
+  },
+  {
+    "word": "volunteer",
+    "meaning": "자원하다, 지원자"
+  },
+  {
+    "word": "widen",
+    "meaning": "확장하다, 넓히다"
+  },
+  {
+    "word": "withdraw",
+    "meaning": "철회하다, 인출하다"
+  },
+  {
+    "word": "withstand",
+    "meaning": "견디다, 저항하다"
+  },
+  {
+    "word": "work",
+    "meaning": "일하다, 작업"
+  },
+  {
+    "word": "write",
+    "meaning": "쓰다, 작성하다"
+  }
+]

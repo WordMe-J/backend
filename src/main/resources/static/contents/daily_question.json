@@ -1,0 +1,3698 @@
+[
+  {
+    "question": "What does the word 'achieve' mean?",
+    "options": {
+      "1": "희망하다",
+      "2": "개선하다",
+      "3": "달성하다",
+      "4": "대안, 선택 가능한",
+      "5": "변화시키다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'acquire' mean?",
+    "options": {
+      "1": "옹호하다, 지지하다",
+      "2": "반대하다",
+      "3": "적응하다, 조정하다",
+      "4": "얻다, 습득하다",
+      "5": "달성하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'adapt' mean?",
+    "options": {
+      "1": "모험하다",
+      "2": "얻다, 습득하다",
+      "3": "옹호하다, 지지하다",
+      "4": "요구하다",
+      "5": "적응하다, 조정하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'adjust' mean?",
+    "options": {
+      "1": "평가하다",
+      "2": "희망하다",
+      "3": "개선하다",
+      "4": "조정하다, 맞추다",
+      "5": "적응하다, 조정하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'administration' mean?",
+    "options": {
+      "1": "실패하다",
+      "2": "지속하다",
+      "3": "관리, 행정",
+      "4": "달성하다",
+      "5": "모험하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'advocate' mean?",
+    "options": {
+      "1": "대안, 선택 가능한",
+      "2": "의심하다",
+      "3": "변화시키다",
+      "4": "예상하다, 기대하다",
+      "5": "옹호하다, 지지하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'allocate' mean?",
+    "options": {
+      "1": "무시하다",
+      "2": "희망하다",
+      "3": "얻다, 습득하다",
+      "4": "할당하다, 배분하다",
+      "5": "대안, 선택 가능한"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'alternative' mean?",
+    "options": {
+      "1": "대안, 선택 가능한",
+      "2": "예측하다",
+      "3": "다양화하다",
+      "4": "진행하다",
+      "5": "고려하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'analyze' mean?",
+    "options": {
+      "1": "협력하다",
+      "2": "기여하다",
+      "3": "분석하다",
+      "4": "조정하다, 맞추다",
+      "5": "강화하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'anticipate' mean?",
+    "options": {
+      "1": "기대하다",
+      "2": "평가하다",
+      "3": "예상하다, 기대하다",
+      "4": "적응하다, 조정하다",
+      "5": "실패하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'approach' mean?",
+    "options": {
+      "1": "진행하다",
+      "2": "방해하다",
+      "3": "이해하다",
+      "4": "접근하다",
+      "5": "보장하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'assess' mean?",
+    "options": {
+      "1": "이해하다",
+      "2": "평가하다, 사정하다",
+      "3": "지속하다",
+      "4": "기대하다",
+      "5": "다양화하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'assist' mean?",
+    "options": {
+      "1": "변화시키다",
+      "2": "접근하다",
+      "3": "실패하다",
+      "4": "감소하다",
+      "5": "돕다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'assume' mean?",
+    "options": {
+      "1": "추정하다, 가정하다",
+      "2": "응원하다",
+      "3": "창조하다",
+      "4": "감사하다",
+      "5": "접근하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'assure' mean?",
+    "options": {
+      "1": "고려하다",
+      "2": "감소하다",
+      "3": "붙이다, 첨부하다",
+      "4": "보장하다, 확신시키다",
+      "5": "개선하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'attach' mean?",
+    "options": {
+      "1": "붙이다, 첨부하다",
+      "2": "관찰하다",
+      "3": "이용 가능한",
+      "4": "창조하다",
+      "5": "발전시키다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'attempt' mean?",
+    "options": {
+      "1": "감독하다",
+      "2": "의심하다",
+      "3": "다양화하다",
+      "4": "모험하다",
+      "5": "시도하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'attend' mean?",
+    "options": {
+      "1": "기대하다",
+      "2": "시도하다",
+      "3": "참석하다, 돌보다",
+      "4": "차별하다",
+      "5": "협력하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'authorize' mean?",
+    "options": {
+      "1": "감독하다",
+      "2": "발전시키다",
+      "3": "평가하다",
+      "4": "승인하다, 권한을 부여하다",
+      "5": "참석하다, 돌보다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'available' mean?",
+    "options": {
+      "1": "이해하다",
+      "2": "모험하다",
+      "3": "예측하다",
+      "4": "고려하다",
+      "5": "이용 가능한"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'balance' mean?",
+    "options": {
+      "1": "준비하다",
+      "2": "고려하다",
+      "3": "감소하다",
+      "4": "균형, 균형을 맞추다",
+      "5": "후보자"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'benefit' mean?",
+    "options": {
+      "1": "희망하다",
+      "2": "예측하다",
+      "3": "혜택, 이익",
+      "4": "포착하다, 붙잡다",
+      "5": "협력하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'boost' mean?",
+    "options": {
+      "1": "기여하다",
+      "2": "관찰하다",
+      "3": "증가시키다, 향상하다",
+      "4": "변화시키다",
+      "5": "제안하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'budget' mean?",
+    "options": {
+      "1": "창조하다",
+      "2": "보장하다",
+      "3": "예산",
+      "4": "제안하다",
+      "5": "요구하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'candidate' mean?",
+    "options": {
+      "1": "균형, 균형을 맞추다",
+      "2": "감사하다",
+      "3": "후보자",
+      "4": "관찰하다",
+      "5": "직업, 경력"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'capable' mean?",
+    "options": {
+      "1": "후보자",
+      "2": "이해하다",
+      "3": "변화시키다",
+      "4": "능력 있는, 할 수 있는",
+      "5": "감독하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'capacity' mean?",
+    "options": {
+      "1": "관찰하다",
+      "2": "용량, 능력",
+      "3": "이해하다",
+      "4": "무시하다",
+      "5": "준비하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'capture' mean?",
+    "options": {
+      "1": "예측하다",
+      "2": "감독하다",
+      "3": "포착하다, 붙잡다",
+      "4": "예산",
+      "5": "이해하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'career' mean?",
+    "options": {
+      "1": "증가시키다, 향상하다",
+      "2": "직업, 경력",
+      "3": "반대하다",
+      "4": "방해하다",
+      "5": "감사하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'category' mean?",
+    "options": {
+      "1": "변화시키다",
+      "2": "차별하다",
+      "3": "의심하다",
+      "4": "범주",
+      "5": "예산"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'cause' mean?",
+    "options": {
+      "1": "원인, 야기하다",
+      "2": "보장하다",
+      "3": "중단하다, 그만두다",
+      "4": "감사하다",
+      "5": "차별하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'cease' mean?",
+    "options": {
+      "1": "방해하다",
+      "2": "증명하다, 인증하다",
+      "3": "중단하다, 그만두다",
+      "4": "협력하다",
+      "5": "분류하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'celebrate' mean?",
+    "options": {
+      "1": "축하하다",
+      "2": "보장하다",
+      "3": "다양화하다",
+      "4": "변화시키다",
+      "5": "예측하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'certify' mean?",
+    "options": {
+      "1": "예측하다",
+      "2": "준비하다",
+      "3": "요금, 부과하다",
+      "4": "증명하다, 인증하다",
+      "5": "협력하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'challenge' mean?",
+    "options": {
+      "1": "변화하다, 변경하다",
+      "2": "협력하다",
+      "3": "도전하다, 도전",
+      "4": "취소하다",
+      "5": "이해하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'change' mean?",
+    "options": {
+      "1": "차별하다",
+      "2": "변화하다, 변경하다",
+      "3": "응원하다",
+      "4": "모험하다",
+      "5": "다양화하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'charge' mean?",
+    "options": {
+      "1": "요금, 부과하다",
+      "2": "다양화하다",
+      "3": "감독하다",
+      "4": "비난하다",
+      "5": "방해하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'clarify' mean?",
+    "options": {
+      "1": "협력하다",
+      "2": "명확하게 하다",
+      "3": "반대하다",
+      "4": "다양화하다",
+      "5": "모험하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'classify' mean?",
+    "options": {
+      "1": "감소하다",
+      "2": "진행하다",
+      "3": "분류하다",
+      "4": "이해하다",
+      "5": "감독하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'collaborate' mean?",
+    "options": {
+      "1": "실패하다",
+      "2": "보장하다",
+      "3": "예측하다",
+      "4": "설명하다",
+      "5": "협력하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'collect' mean?",
+    "options": {
+      "1": "결합하다, 합치다",
+      "2": "방해하다",
+      "3": "모으다, 수집하다",
+      "4": "협력하다",
+      "5": "반영하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'combine' mean?",
+    "options": {
+      "1": "강화하다",
+      "2": "증명하다",
+      "3": "결합하다, 합치다",
+      "4": "취소하다",
+      "5": "감소하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'comfort' mean?",
+    "options": {
+      "1": "위로하다, 편안함",
+      "2": "비난하다",
+      "3": "인정하다",
+      "4": "요청하다",
+      "5": "차별하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'commence' mean?",
+    "options": {
+      "1": "시작하다",
+      "2": "고려하다",
+      "3": "희망하다",
+      "4": "모으다, 수집하다",
+      "5": "비교하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'comment' mean?",
+    "options": {
+      "1": "창조하다",
+      "2": "연구하다",
+      "3": "모험하다",
+      "4": "조직하다",
+      "5": "논평하다, 의견을 말하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'commit' mean?",
+    "options": {
+      "1": "전념하다, 약속하다",
+      "2": "생산하다",
+      "3": "강요하다",
+      "4": "승인하다",
+      "5": "유도하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'communicate' mean?",
+    "options": {
+      "1": "설명하다",
+      "2": "의사소통하다",
+      "3": "요구하다",
+      "4": "설득하다",
+      "5": "관찰하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'compare' mean?",
+    "options": {
+      "1": "차별하다",
+      "2": "협력하다",
+      "3": "진행하다",
+      "4": "비교하다",
+      "5": "증명하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'compete' mean?",
+    "options": {
+      "1": "분석하다",
+      "2": "복제하다",
+      "3": "평가하다",
+      "4": "방해하다",
+      "5": "경쟁하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'complain' mean?",
+    "options": {
+      "1": "관찰하다",
+      "2": "불평하다",
+      "3": "배우다",
+      "4": "완성하다",
+      "5": "가리키다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'complete' mean?",
+    "options": {
+      "1": "허가하다",
+      "2": "다양화하다",
+      "3": "방해하다",
+      "4": "완성하다, 완료하다",
+      "5": "보장하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'comply' mean?",
+    "options": {
+      "1": "회복하다",
+      "2": "설명하다",
+      "3": "관찰하다",
+      "4": "보장하다",
+      "5": "따르다, 준수하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'compose' mean?",
+    "options": {
+      "1": "보급하다",
+      "2": "타협하다, 절충하다",
+      "3": "구성하다, 작곡하다",
+      "4": "보호하다",
+      "5": "회복하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'comprehend' mean?",
+    "options": {
+      "1": "응원하다",
+      "2": "희망하다",
+      "3": "수용하다",
+      "4": "지원하다",
+      "5": "이해하다, 파악하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'compromise' mean?",
+    "options": {
+      "1": "가리키다",
+      "2": "타협하다, 절충하다",
+      "3": "보장하다",
+      "4": "전달하다",
+      "5": "기대하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'conceal' mean?",
+    "options": {
+      "1": "승인하다",
+      "2": "숨기다, 감추다",
+      "3": "수용하다",
+      "4": "관찰하다",
+      "5": "연구하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'concentrate' mean?",
+    "options": {
+      "1": "준비하다",
+      "2": "실패하다",
+      "3": "고안하다",
+      "4": "계획하다",
+      "5": "집중하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'concern' mean?",
+    "options": {
+      "1": "관심, 걱정하다",
+      "2": "무시하다",
+      "3": "발견하다",
+      "4": "반영하다",
+      "5": "복제하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'conclude' mean?",
+    "options": {
+      "1": "강요하다",
+      "2": "관리하다",
+      "3": "다양화하다",
+      "4": "결론을 내리다, 마치다",
+      "5": "모험하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'conduct' mean?",
+    "options": {
+      "1": "변화시키다",
+      "2": "추진하다",
+      "3": "따르다, 준수하다",
+      "4": "개선하다",
+      "5": "수행하다, 지휘하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'confirm' mean?",
+    "options": {
+      "1": "구성되다, 이루어지다",
+      "2": "희망하다",
+      "3": "확인하다, 확정하다",
+      "4": "상담하다, 조언을 구하다",
+      "5": "자유화하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'conform' mean?",
+    "options": {
+      "1": "취소하다",
+      "2": "따르다, 순응하다",
+      "3": "포함하다, 담다",
+      "4": "무시하다",
+      "5": "창조하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'connect' mean?",
+    "options": {
+      "1": "대처하다",
+      "2": "연결하다",
+      "3": "제안하다",
+      "4": "조정하다",
+      "5": "고려하다, 생각하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'conquer' mean?",
+    "options": {
+      "1": "정복하다, 극복하다",
+      "2": "연결하다",
+      "3": "연구하다",
+      "4": "동의하다",
+      "5": "허가하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'consider' mean?",
+    "options": {
+      "1": "고려하다, 생각하다",
+      "2": "감사하다",
+      "3": "조직하다",
+      "4": "개선하다",
+      "5": "보급하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'consist' mean?",
+    "options": {
+      "1": "고려하다",
+      "2": "상담하다, 조언을 구하다",
+      "3": "구성되다, 이루어지다",
+      "4": "요청하다",
+      "5": "확인하다, 확정하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'consult' mean?",
+    "options": {
+      "1": "반영하다",
+      "2": "모험하다",
+      "3": "따르다, 순응하다",
+      "4": "협상하다",
+      "5": "상담하다, 조언을 구하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'consume' mean?",
+    "options": {
+      "1": "소비하다, 먹다",
+      "2": "반영하다",
+      "3": "방해하다",
+      "4": "정복하다, 극복하다",
+      "5": "용서하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'contain' mean?",
+    "options": {
+      "1": "완성하다",
+      "2": "자유화하다",
+      "3": "포함하다, 담다",
+      "4": "상담하다, 조언을 구하다",
+      "5": "인정하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'continue' mean?",
+    "options": {
+      "1": "발견하다",
+      "2": "계속하다",
+      "3": "감사하다",
+      "4": "확신하다",
+      "5": "지원하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'contribute' mean?",
+    "options": {
+      "1": "변화시키다",
+      "2": "참석하다",
+      "3": "관찰하다",
+      "4": "기여하다, 공헌하다",
+      "5": "취소하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'control' mean?",
+    "options": {
+      "1": "기여하다, 공헌하다",
+      "2": "통제하다, 관리하다",
+      "3": "고안하다",
+      "4": "차별하다",
+      "5": "평가하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'convene' mean?",
+    "options": {
+      "1": "보호하다",
+      "2": "소집하다, 모이다",
+      "3": "발전시키다",
+      "4": "통보하다",
+      "5": "창조하다, 만들다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'convert' mean?",
+    "options": {
+      "1": "변환하다, 전환하다",
+      "2": "모험하다",
+      "3": "조정하다",
+      "4": "준비하다",
+      "5": "개선하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'convince' mean?",
+    "options": {
+      "1": "조정하다, 협력하다",
+      "2": "납득시키다, 설득하다",
+      "3": "배우다",
+      "4": "방해하다",
+      "5": "소집하다, 모이다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'coordinate' mean?",
+    "options": {
+      "1": "완성하다",
+      "2": "분석하다",
+      "3": "조정하다, 협력하다",
+      "4": "동반하다",
+      "5": "보급하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'correct' mean?",
+    "options": {
+      "1": "생산하다",
+      "2": "지원하다",
+      "3": "증명하다",
+      "4": "발견하다",
+      "5": "수정하다, 바로잡다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'correlate' mean?",
+    "options": {
+      "1": "비난하다",
+      "2": "상관관계가 있다, 관련시키다",
+      "3": "추진하다",
+      "4": "예측하다",
+      "5": "반대하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'correspond' mean?",
+    "options": {
+      "1": "일치하다, 서신을 주고받다",
+      "2": "수용하다",
+      "3": "단순화하다",
+      "4": "평가하다",
+      "5": "조사하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'create' mean?",
+    "options": {
+      "1": "회복하다",
+      "2": "복제하다",
+      "3": "설명하다",
+      "4": "발전시키다",
+      "5": "창조하다, 만들다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'criticize' mean?",
+    "options": {
+      "1": "조사하다",
+      "2": "예측하다",
+      "3": "정의하다, 규정하다",
+      "4": "대처하다",
+      "5": "비판하다, 비난하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'cultivate' mean?",
+    "options": {
+      "1": "재배하다, 양성하다",
+      "2": "조정하다",
+      "3": "손상, 손해를 입히다",
+      "4": "정의하다, 규정하다",
+      "5": "감사하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'customize' mean?",
+    "options": {
+      "1": "헌신하다, 전념하다",
+      "2": "조사하다",
+      "3": "요구하다, 수요",
+      "4": "개선하다",
+      "5": "사용자 정의하다, 맞춤화하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'damage' mean?",
+    "options": {
+      "1": "손상, 손해를 입히다",
+      "2": "검토하다",
+      "3": "정의하다, 규정하다",
+      "4": "실패하다",
+      "5": "보호하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'decrease' mean?",
+    "options": {
+      "1": "관찰하다",
+      "2": "감소하다, 줄이다",
+      "3": "제안하다",
+      "4": "위임하다, 대표자",
+      "5": "지원하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'dedicate' mean?",
+    "options": {
+      "1": "구현하다",
+      "2": "단순화하다",
+      "3": "관리하다",
+      "4": "헌신하다, 전념하다",
+      "5": "반영하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'define' mean?",
+    "options": {
+      "1": "가리키다",
+      "2": "정의하다, 규정하다",
+      "3": "통보하다",
+      "4": "사용자 정의하다, 맞춤화하다",
+      "5": "제안하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'delegate' mean?",
+    "options": {
+      "1": "발전시키다",
+      "2": "조사하다",
+      "3": "위임하다, 대표자",
+      "4": "분석하다",
+      "5": "통보하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'deliver' mean?",
+    "options": {
+      "1": "수용하다",
+      "2": "강요하다",
+      "3": "배달하다, 전달하다",
+      "4": "용서하다",
+      "5": "회복하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'demand' mean?",
+    "options": {
+      "1": "요구하다, 수요",
+      "2": "진행하다",
+      "3": "발전시키다",
+      "4": "무시하다",
+      "5": "차별하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'demonstrate' mean?",
+    "options": {
+      "1": "기여하다",
+      "2": "의존하다, 의지하다",
+      "3": "증명하다, 시연하다",
+      "4": "유도하다",
+      "5": "조사하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'deny' mean?",
+    "options": {
+      "1": "기여하다",
+      "2": "복제하다",
+      "3": "부인하다, 거부하다",
+      "4": "단언하다",
+      "5": "감사하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'depend' mean?",
+    "options": {
+      "1": "예측하다",
+      "2": "의존하다, 의지하다",
+      "3": "결정하다, 알아내다",
+      "4": "단언하다",
+      "5": "헌신하다, 바치다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'deploy' mean?",
+    "options": {
+      "1": "헌신하다, 바치다",
+      "2": "준비하다",
+      "3": "단언하다",
+      "4": "수용하다",
+      "5": "배치하다, 전개하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'derive' mean?",
+    "options": {
+      "1": "차별하다",
+      "2": "유래하다, 도출하다",
+      "3": "수용하다",
+      "4": "검토하다",
+      "5": "협력하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'design' mean?",
+    "options": {
+      "1": "보급하다",
+      "2": "설계하다, 디자인하다",
+      "3": "통보하다",
+      "4": "증명하다, 시연하다",
+      "5": "지원하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'desire' mean?",
+    "options": {
+      "1": "결정하다, 알아내다",
+      "2": "반대하다",
+      "3": "바라다, 욕망",
+      "4": "유도하다",
+      "5": "협력하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'determine' mean?",
+    "options": {
+      "1": "강요하다",
+      "2": "결정하다, 알아내다",
+      "3": "승인하다",
+      "4": "증명하다, 시연하다",
+      "5": "추진하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'develop' mean?",
+    "options": {
+      "1": "요구하다",
+      "2": "개발하다, 성장하다",
+      "3": "이해하다",
+      "4": "지원하다",
+      "5": "검토하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'devote' mean?",
+    "options": {
+      "1": "강화하다",
+      "2": "헌신하다, 바치다",
+      "3": "요구하다",
+      "4": "요청하다",
+      "5": "개발하다, 성장하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'differentiate' mean?",
+    "options": {
+      "1": "구별하다, 차별화하다",
+      "2": "모험하다",
+      "3": "감소하다",
+      "4": "용서하다",
+      "5": "확신하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'diminish' mean?",
+    "options": {
+      "1": "줄어들다, 감소하다",
+      "2": "취소하다",
+      "3": "참석하다",
+      "4": "희망하다",
+      "5": "요청하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'direct' mean?",
+    "options": {
+      "1": "지시하다, 지도하다",
+      "2": "실패하다",
+      "3": "방해하다",
+      "4": "강화하다",
+      "5": "고려하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'disagree' mean?",
+    "options": {
+      "1": "강요하다",
+      "2": "동의하지 않다, 의견이 다르다",
+      "3": "방해하다",
+      "4": "가리키다",
+      "5": "동의하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'disappear' mean?",
+    "options": {
+      "1": "해고하다, 묵살하다",
+      "2": "사라지다",
+      "3": "단언하다",
+      "4": "감독하다",
+      "5": "응원하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'discover' mean?",
+    "options": {
+      "1": "보존하다",
+      "2": "발견하다",
+      "3": "추진하다",
+      "4": "실패하다",
+      "5": "생산하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'discuss' mean?",
+    "options": {
+      "1": "전달하다",
+      "2": "발전시키다",
+      "3": "논의하다",
+      "4": "추진하다",
+      "5": "단언하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'dismiss' mean?",
+    "options": {
+      "1": "지원하다",
+      "2": "강요하다",
+      "3": "무시하다",
+      "4": "줄어들다, 감소하다",
+      "5": "해고하다, 묵살하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'distribute' mean?",
+    "options": {
+      "1": "변화시키다",
+      "2": "감독하다",
+      "3": "분배하다, 배포하다",
+      "4": "제거하다",
+      "5": "해고하다, 묵살하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'diversify' mean?",
+    "options": {
+      "1": "비난하다",
+      "2": "다각화하다, 다양화하다",
+      "3": "지원하다",
+      "4": "설명하다",
+      "5": "증명하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'divide' mean?",
+    "options": {
+      "1": "용서하다",
+      "2": "설명하다",
+      "3": "보장하다",
+      "4": "기대하다",
+      "5": "나누다, 분할하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'document' mean?",
+    "options": {
+      "1": "대처하다",
+      "2": "다양화하다",
+      "3": "문서, 기록하다",
+      "4": "제거하다",
+      "5": "조정하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'dominate' mean?",
+    "options": {
+      "1": "응원하다",
+      "2": "지배하다, 우세하다",
+      "3": "분석하다",
+      "4": "교육하다",
+      "5": "자유화하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'donate' mean?",
+    "options": {
+      "1": "기여하다",
+      "2": "초안, 설계하다",
+      "3": "기부하다, 기증하다",
+      "4": "조사하다",
+      "5": "생산하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'draft' mean?",
+    "options": {
+      "1": "요구하다",
+      "2": "초안, 설계하다",
+      "3": "제거하다",
+      "4": "협상하다",
+      "5": "관리하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'earn' mean?",
+    "options": {
+      "1": "설득하다",
+      "2": "벌다, 얻다",
+      "3": "제안하다",
+      "4": "준비하다",
+      "5": "지배하다, 우세하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'educate' mean?",
+    "options": {
+      "1": "단순화하다",
+      "2": "확신하다",
+      "3": "추진하다",
+      "4": "교육하다",
+      "5": "감소하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'elaborate' mean?",
+    "options": {
+      "1": "분석하다",
+      "2": "제거하다, 없애다",
+      "3": "정교하게 만들다, 상세히 설명하다",
+      "4": "조사하다",
+      "5": "추진하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'eliminate' mean?",
+    "options": {
+      "1": "제거하다, 없애다",
+      "2": "추진하다",
+      "3": "보존하다",
+      "4": "대처하다",
+      "5": "반영하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'emerge' mean?",
+    "options": {
+      "1": "의심하다",
+      "2": "나타나다, 드러나다",
+      "3": "평가하다",
+      "4": "기부하다, 기증하다",
+      "5": "검토하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'emphasize' mean?",
+    "options": {
+      "1": "자유화하다",
+      "2": "협상하다",
+      "3": "강조하다",
+      "4": "확실하게 하다, 보장하다",
+      "5": "격려하다, 장려하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'enable' mean?",
+    "options": {
+      "1": "완성하다",
+      "2": "추진하다",
+      "3": "반대하다",
+      "4": "가능하게 하다",
+      "5": "보호하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'encounter' mean?",
+    "options": {
+      "1": "동반하다",
+      "2": "감독하다",
+      "3": "설명하다",
+      "4": "창조하다",
+      "5": "마주치다, 직면하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'encourage' mean?",
+    "options": {
+      "1": "격려하다, 장려하다",
+      "2": "평가하다",
+      "3": "조정하다",
+      "4": "발전시키다",
+      "5": "자유화하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'endorse' mean?",
+    "options": {
+      "1": "감소하다",
+      "2": "비난하다",
+      "3": "지지하다, 승인하다",
+      "4": "참석하다",
+      "5": "용서하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'engage' mean?",
+    "options": {
+      "1": "관여하다, 참여하다",
+      "2": "협상하다",
+      "3": "요청하다",
+      "4": "조정하다",
+      "5": "유도하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'enhance' mean?",
+    "options": {
+      "1": "조직하다",
+      "2": "다양화하다",
+      "3": "모험하다",
+      "4": "향상시키다, 강화하다",
+      "5": "동반하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'enlarge' mean?",
+    "options": {
+      "1": "반대하다",
+      "2": "가리키다",
+      "3": "확신하다",
+      "4": "복제하다",
+      "5": "확대하다, 확장하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'ensure' mean?",
+    "options": {
+      "1": "지원하다",
+      "2": "의심하다",
+      "3": "개선하다",
+      "4": "실패하다",
+      "5": "확실하게 하다, 보장하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'enter' mean?",
+    "options": {
+      "1": "감사하다",
+      "2": "조사하다",
+      "3": "응원하다",
+      "4": "입력하다, 들어가다",
+      "5": "관찰하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'establish' mean?",
+    "options": {
+      "1": "추정하다, 평가하다",
+      "2": "용서하다",
+      "3": "강화하다",
+      "4": "동의하다",
+      "5": "설립하다, 확립하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'estimate' mean?",
+    "options": {
+      "1": "고려하다",
+      "2": "요청하다",
+      "3": "추정하다, 평가하다",
+      "4": "보호하다",
+      "5": "배우다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'evaluate' mean?",
+    "options": {
+      "1": "모험하다",
+      "2": "평가하다, 감정하다",
+      "3": "증거",
+      "4": "증명하다",
+      "5": "평가하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'evidence' mean?",
+    "options": {
+      "1": "유도하다",
+      "2": "증거",
+      "3": "발전시키다",
+      "4": "다양화하다",
+      "5": "동반하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'evolve' mean?",
+    "options": {
+      "1": "요청하다",
+      "2": "설득하다",
+      "3": "완성하다",
+      "4": "진화하다, 발전하다",
+      "5": "비난하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'examine' mean?",
+    "options": {
+      "1": "단언하다",
+      "2": "용서하다",
+      "3": "보존하다",
+      "4": "검사하다, 조사하다",
+      "5": "초과하다, 능가하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'exceed' mean?",
+    "options": {
+      "1": "완성하다",
+      "2": "조직하다",
+      "3": "강요하다",
+      "4": "기대하다",
+      "5": "초과하다, 능가하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'exchange' mean?",
+    "options": {
+      "1": "인정하다",
+      "2": "용서하다",
+      "3": "차별하다",
+      "4": "무시하다",
+      "5": "교환하다, 환전하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'execute' mean?",
+    "options": {
+      "1": "응원하다",
+      "2": "제거하다",
+      "3": "생산하다",
+      "4": "실행하다, 처형하다",
+      "5": "수용하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'exhibit' mean?",
+    "options": {
+      "1": "관리하다",
+      "2": "제안하다",
+      "3": "보호하다",
+      "4": "확신하다",
+      "5": "전시하다, 나타내다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'expand' mean?",
+    "options": {
+      "1": "확장하다, 넓히다",
+      "2": "표현하다, 나타내다",
+      "3": "협상하다",
+      "4": "조정하다",
+      "5": "반대하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'expect' mean?",
+    "options": {
+      "1": "기대하다, 예상하다",
+      "2": "계획하다",
+      "3": "구현하다",
+      "4": "희망하다",
+      "5": "변화시키다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'expedite' mean?",
+    "options": {
+      "1": "승인하다",
+      "2": "보급하다",
+      "3": "창조하다",
+      "4": "촉진하다, 신속히 처리하다",
+      "5": "응원하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'experience' mean?",
+    "options": {
+      "1": "경험하다, 겪다",
+      "2": "동의하다",
+      "3": "관찰하다",
+      "4": "강화하다",
+      "5": "탐험하다, 조사하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'experiment' mean?",
+    "options": {
+      "1": "지원하다",
+      "2": "실험하다",
+      "3": "지속하다",
+      "4": "유도하다",
+      "5": "강화하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'explore' mean?",
+    "options": {
+      "1": "탐험하다, 조사하다",
+      "2": "반영하다",
+      "3": "관리하다",
+      "4": "용서하다",
+      "5": "강화하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'export' mean?",
+    "options": {
+      "1": "차별하다",
+      "2": "수출하다",
+      "3": "동반하다",
+      "4": "참석하다",
+      "5": "반대하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'express' mean?",
+    "options": {
+      "1": "표현하다, 나타내다",
+      "2": "이해하다",
+      "3": "확신하다",
+      "4": "차별하다",
+      "5": "고려하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'extend' mean?",
+    "options": {
+      "1": "실패하다",
+      "2": "가리키다",
+      "3": "확장하다, 연장하다",
+      "4": "용서하다",
+      "5": "보호하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'facilitate' mean?",
+    "options": {
+      "1": "참석하다",
+      "2": "인정하다",
+      "3": "기대하다",
+      "4": "촉진하다, 용이하게 하다",
+      "5": "발전시키다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'feature' mean?",
+    "options": {
+      "1": "창조하다",
+      "2": "보호하다",
+      "3": "특징, 특징으로 하다",
+      "4": "감사하다",
+      "5": "공식화하다, 만들어내다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'finalize' mean?",
+    "options": {
+      "1": "조정하다",
+      "2": "관리하다",
+      "3": "마무리하다, 완결하다",
+      "4": "재정, 자금을 조달하다",
+      "5": "계획하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'finance' mean?",
+    "options": {
+      "1": "재정, 자금을 조달하다",
+      "2": "허가하다",
+      "3": "진행하다",
+      "4": "강요하다",
+      "5": "인정하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'focus' mean?",
+    "options": {
+      "1": "요구하다",
+      "2": "모험하다",
+      "3": "조직하다",
+      "4": "집중하다, 초점",
+      "5": "보급하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'forecast' mean?",
+    "options": {
+      "1": "보장하다",
+      "2": "설득하다",
+      "3": "회복하다",
+      "4": "이해하다",
+      "5": "예측하다, 전망"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'form' mean?",
+    "options": {
+      "1": "발전시키다",
+      "2": "의심하다",
+      "3": "지속하다",
+      "4": "형성하다, 형태",
+      "5": "제거하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'formulate' mean?",
+    "options": {
+      "1": "유도하다",
+      "2": "공식화하다, 만들어내다",
+      "3": "동의하다",
+      "4": "감소하다",
+      "5": "관리하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'found' mean?",
+    "options": {
+      "1": "설립하다, 세우다",
+      "2": "요청하다",
+      "3": "인정하다",
+      "4": "희망하다",
+      "5": "회복하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'fulfill' mean?",
+    "options": {
+      "1": "강화하다",
+      "2": "이행하다, 충족시키다",
+      "3": "발전시키다",
+      "4": "보호하다",
+      "5": "실패하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'function' mean?",
+    "options": {
+      "1": "기능, 작동하다",
+      "2": "반영하다",
+      "3": "확신하다",
+      "4": "제거하다",
+      "5": "요청하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'gain' mean?",
+    "options": {
+      "1": "강화하다",
+      "2": "얻다, 이익",
+      "3": "단순화하다",
+      "4": "반대하다",
+      "5": "조정하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'gather' mean?",
+    "options": {
+      "1": "구현하다",
+      "2": "감사하다",
+      "3": "모으다, 수집하다",
+      "4": "지원하다",
+      "5": "고용하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'generate' mean?",
+    "options": {
+      "1": "복제하다",
+      "2": "변화시키다",
+      "3": "생성하다, 만들어내다",
+      "4": "제안하다",
+      "5": "단순화하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'govern' mean?",
+    "options": {
+      "1": "대처하다",
+      "2": "검토하다",
+      "3": "반영하다",
+      "4": "통치하다, 지배하다",
+      "5": "실행하다, 도구"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'handle' mean?",
+    "options": {
+      "1": "압박하다",
+      "2": "감소하다",
+      "3": "이해하다",
+      "4": "구현하다",
+      "5": "처리하다, 다루다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'highlight' mean?",
+    "options": {
+      "1": "조사하다",
+      "2": "변화시키다",
+      "3": "감소하다",
+      "4": "강조하다, 하이라이트",
+      "5": "설명하다, 예증하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'hire' mean?",
+    "options": {
+      "1": "모험하다",
+      "2": "고용하다",
+      "3": "방해하다",
+      "4": "기여하다",
+      "5": "보존하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'identify' mean?",
+    "options": {
+      "1": "확인하다, 식별하다",
+      "2": "창조하다",
+      "3": "완성하다",
+      "4": "실패하다",
+      "5": "동반하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'illustrate' mean?",
+    "options": {
+      "1": "요구하다",
+      "2": "창조하다",
+      "3": "기여하다",
+      "4": "유도하다",
+      "5": "설명하다, 예증하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'implement' mean?",
+    "options": {
+      "1": "동의하다",
+      "2": "대처하다",
+      "3": "고안하다",
+      "4": "구현하다",
+      "5": "실행하다, 도구"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'imply' mean?",
+    "options": {
+      "1": "기여하다",
+      "2": "수입하다, 의미",
+      "3": "암시하다, 시사하다",
+      "4": "보존하다",
+      "5": "보장하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'import' mean?",
+    "options": {
+      "1": "수입하다, 의미",
+      "2": "보급하다",
+      "3": "요구하다",
+      "4": "영향을 미치다, 영향",
+      "5": "반영하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'improve' mean?",
+    "options": {
+      "1": "개선하다, 향상시키다",
+      "2": "보장하다",
+      "3": "기여하다",
+      "4": "영향을 미치다, 영향",
+      "5": "감독하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'include' mean?",
+    "options": {
+      "1": "보호하다",
+      "2": "발전시키다",
+      "3": "시작하다, 개시하다",
+      "4": "포함하다",
+      "5": "동의하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'increase' mean?",
+    "options": {
+      "1": "증가시키다, 늘리다",
+      "2": "지속하다",
+      "3": "대처하다",
+      "4": "조사하다",
+      "5": "평가하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'indicate' mean?",
+    "options": {
+      "1": "비난하다",
+      "2": "증명하다",
+      "3": "감독하다",
+      "4": "제거하다",
+      "5": "나타내다, 보여주다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'influence' mean?",
+    "options": {
+      "1": "자유화하다",
+      "2": "영향을 미치다, 영향",
+      "3": "무시하다",
+      "4": "비난하다",
+      "5": "평가하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'inform' mean?",
+    "options": {
+      "1": "인정하다",
+      "2": "차별하다",
+      "3": "조사하다",
+      "4": "확신하다",
+      "5": "알리다, 통지하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'initiate' mean?",
+    "options": {
+      "1": "완성하다",
+      "2": "시작하다, 개시하다",
+      "3": "지속하다",
+      "4": "취소하다",
+      "5": "기여하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'innovate' mean?",
+    "options": {
+      "1": "혁신하다, 새롭게 하다",
+      "2": "계획하다",
+      "3": "대처하다",
+      "4": "강요하다",
+      "5": "평가하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'inspect' mean?",
+    "options": {
+      "1": "감소하다",
+      "2": "통보하다",
+      "3": "창조하다",
+      "4": "가리키다",
+      "5": "검사하다, 점검하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'inspire' mean?",
+    "options": {
+      "1": "참석하다",
+      "2": "연구하다",
+      "3": "영감을 주다, 고무하다",
+      "4": "설명하다",
+      "5": "통합하다, 결합하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'install' mean?",
+    "options": {
+      "1": "복제하다",
+      "2": "고려하다",
+      "3": "대처하다",
+      "4": "설치하다",
+      "5": "상호작용하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'integrate' mean?",
+    "options": {
+      "1": "관찰하다",
+      "2": "협상하다",
+      "3": "자유화하다",
+      "4": "통합하다, 결합하다",
+      "5": "의심하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'intend' mean?",
+    "options": {
+      "1": "단언하다",
+      "2": "소개하다, 도입하다",
+      "3": "의도하다, 계획하다",
+      "4": "동반하다",
+      "5": "설명하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'interact' mean?",
+    "options": {
+      "1": "상호작용하다",
+      "2": "승인하다",
+      "3": "준비하다",
+      "4": "해석하다, 통역하다",
+      "5": "검토하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'interpret' mean?",
+    "options": {
+      "1": "동의하다",
+      "2": "감소하다",
+      "3": "보호하다",
+      "4": "해석하다, 통역하다",
+      "5": "압박하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'interrupt' mean?",
+    "options": {
+      "1": "복제하다",
+      "2": "보존하다",
+      "3": "보호하다",
+      "4": "방해하다, 중단하다",
+      "5": "추진하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'introduce' mean?",
+    "options": {
+      "1": "승인하다",
+      "2": "예측하다",
+      "3": "동반하다",
+      "4": "보호하다",
+      "5": "소개하다, 도입하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'invest' mean?",
+    "options": {
+      "1": "투자하다",
+      "2": "지속하다",
+      "3": "관찰하다",
+      "4": "고안하다",
+      "5": "보호하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'investigate' mean?",
+    "options": {
+      "1": "조사하다, 연구하다",
+      "2": "평가하다",
+      "3": "희망하다",
+      "4": "정당화하다, 변명하다",
+      "5": "설득하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'involve' mean?",
+    "options": {
+      "1": "보장하다",
+      "2": "포함하다, 수반하다",
+      "3": "대처하다",
+      "4": "조사하다",
+      "5": "단언하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'issue' mean?",
+    "options": {
+      "1": "발행하다, 문제",
+      "2": "전달하다",
+      "3": "개선하다",
+      "4": "이끌다, 인도하다",
+      "5": "회복하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'join' mean?",
+    "options": {
+      "1": "제안하다",
+      "2": "정당화하다, 변명하다",
+      "3": "참여하다, 연결하다",
+      "4": "평가하다",
+      "5": "개선하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'justify' mean?",
+    "options": {
+      "1": "정당화하다, 변명하다",
+      "2": "관리하다",
+      "3": "협상하다",
+      "4": "준비하다",
+      "5": "제안하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'launch' mean?",
+    "options": {
+      "1": "방해하다",
+      "2": "통보하다",
+      "3": "검토하다",
+      "4": "출시하다, 발사하다",
+      "5": "유도하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'lead' mean?",
+    "options": {
+      "1": "이해하다",
+      "2": "전달하다",
+      "3": "조사하다",
+      "4": "이끌다, 인도하다",
+      "5": "반대하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'learn' mean?",
+    "options": {
+      "1": "자유화하다",
+      "2": "배우다, 학습하다",
+      "3": "기여하다",
+      "4": "반영하다",
+      "5": "검토하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'legalize' mean?",
+    "options": {
+      "1": "강화하다",
+      "2": "다양화하다",
+      "3": "생산하다",
+      "4": "합법화하다",
+      "5": "배우다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'liberalize' mean?",
+    "options": {
+      "1": "완성하다",
+      "2": "가리키다",
+      "3": "자유화하다",
+      "4": "수용하다",
+      "5": "증명하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'license' mean?",
+    "options": {
+      "1": "수용하다",
+      "2": "설명하다",
+      "3": "면허, 허가하다",
+      "4": "동의하다",
+      "5": "다양화하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'limit' mean?",
+    "options": {
+      "1": "인정하다",
+      "2": "생산하다",
+      "3": "제한하다, 한계",
+      "4": "기대하다",
+      "5": "수용하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'link' mean?",
+    "options": {
+      "1": "연결하다, 링크",
+      "2": "구현하다",
+      "3": "창조하다",
+      "4": "전달하다",
+      "5": "동반하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'maintain' mean?",
+    "options": {
+      "1": "예측하다",
+      "2": "제조하다, 생산하다",
+      "3": "지원하다",
+      "4": "준비하다",
+      "5": "유지하다, 주장하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'manage' mean?",
+    "options": {
+      "1": "제거하다",
+      "2": "가리키다",
+      "3": "관리하다, 다루다",
+      "4": "언급하다, 거론하다",
+      "5": "보존하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'manufacture' mean?",
+    "options": {
+      "1": "차별하다",
+      "2": "제조하다, 생산하다",
+      "3": "중재하다, 조정하다",
+      "4": "고안하다",
+      "5": "의심하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'market' mean?",
+    "options": {
+      "1": "요청하다",
+      "2": "개선하다",
+      "3": "시장, 마케팅하다",
+      "4": "지속하다",
+      "5": "허가하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'measure' mean?",
+    "options": {
+      "1": "증명하다",
+      "2": "완성하다",
+      "3": "용서하다",
+      "4": "개선하다",
+      "5": "측정하다, 조치"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'mediate' mean?",
+    "options": {
+      "1": "중재하다, 조정하다",
+      "2": "협상하다",
+      "3": "수용하다",
+      "4": "지속하다",
+      "5": "대처하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'mention' mean?",
+    "options": {
+      "1": "제거하다",
+      "2": "동반하다",
+      "3": "모험하다",
+      "4": "확신하다",
+      "5": "언급하다, 거론하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'merge' mean?",
+    "options": {
+      "1": "계획하다",
+      "2": "용서하다",
+      "3": "단언하다",
+      "4": "조직하다, 정리하다",
+      "5": "합병하다, 통합하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'minimize' mean?",
+    "options": {
+      "1": "취소하다",
+      "2": "고안하다",
+      "3": "복제하다",
+      "4": "수용하다",
+      "5": "최소화하다, 축소하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'modify' mean?",
+    "options": {
+      "1": "수정하다, 변경하다",
+      "2": "다양화하다",
+      "3": "승인하다",
+      "4": "설명하다",
+      "5": "요구하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'motivate' mean?",
+    "options": {
+      "1": "관찰하다",
+      "2": "협상하다, 교섭하다",
+      "3": "확신하다",
+      "4": "동기부여하다, 자극하다",
+      "5": "희망하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'negotiate' mean?",
+    "options": {
+      "1": "감사하다",
+      "2": "조직하다, 정리하다",
+      "3": "응원하다",
+      "4": "추진하다",
+      "5": "협상하다, 교섭하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'notify' mean?",
+    "options": {
+      "1": "완성하다",
+      "2": "예측하다",
+      "3": "동반하다",
+      "4": "수용하다",
+      "5": "알리다, 통지하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'observe' mean?",
+    "options": {
+      "1": "보호하다",
+      "2": "설득하다",
+      "3": "확신하다",
+      "4": "지원하다",
+      "5": "관찰하다, 준수하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'obtain' mean?",
+    "options": {
+      "1": "단순화하다",
+      "2": "감독하다",
+      "3": "얻다, 획득하다",
+      "4": "보장하다",
+      "5": "연구하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'operate' mean?",
+    "options": {
+      "1": "요청하다",
+      "2": "고안하다",
+      "3": "작동하다, 운영하다",
+      "4": "창조하다",
+      "5": "인정하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'organize' mean?",
+    "options": {
+      "1": "평가하다",
+      "2": "고려하다",
+      "3": "조직하다, 정리하다",
+      "4": "지속하다",
+      "5": "회복하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'overcome' mean?",
+    "options": {
+      "1": "극복하다, 이기다",
+      "2": "감소하다",
+      "3": "동반하다",
+      "4": "계획하다",
+      "5": "강요하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'participate' mean?",
+    "options": {
+      "1": "다양화하다",
+      "2": "선호하다",
+      "3": "완성하다",
+      "4": "가리키다",
+      "5": "참여하다, 참가하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'perform' mean?",
+    "options": {
+      "1": "제안하다",
+      "2": "강요하다",
+      "3": "보존하다",
+      "4": "수행하다, 공연하다",
+      "5": "지속하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'permit' mean?",
+    "options": {
+      "1": "조직하다",
+      "2": "허가하다, 허용하다",
+      "3": "고안하다",
+      "4": "제안하다",
+      "5": "조정하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'persuade' mean?",
+    "options": {
+      "1": "협상하다",
+      "2": "설득하다, 납득시키다",
+      "3": "이해하다",
+      "4": "생산하다",
+      "5": "완성하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'plan' mean?",
+    "options": {
+      "1": "계획하다",
+      "2": "취소하다",
+      "3": "다양화하다",
+      "4": "대처하다",
+      "5": "설득하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'please' mean?",
+    "options": {
+      "1": "전달하다",
+      "2": "차별하다",
+      "3": "추진하다",
+      "4": "관찰하다",
+      "5": "기쁘게 하다, 만족시키다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'point' mean?",
+    "options": {
+      "1": "수용하다",
+      "2": "다양화하다",
+      "3": "조사하다",
+      "4": "대처하다",
+      "5": "가리키다, 요점"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'predict' mean?",
+    "options": {
+      "1": "제안하다",
+      "2": "설명하다",
+      "3": "연구하다",
+      "4": "예측하다, 예상하다",
+      "5": "설득하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'prefer' mean?",
+    "options": {
+      "1": "차별하다",
+      "2": "보호하다",
+      "3": "선호하다",
+      "4": "구현하다",
+      "5": "감사하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'prepare' mean?",
+    "options": {
+      "1": "단순화하다",
+      "2": "회복하다",
+      "3": "용서하다",
+      "4": "발전시키다",
+      "5": "준비하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'preserve' mean?",
+    "options": {
+      "1": "보존하다, 유지하다",
+      "2": "희망하다",
+      "3": "완성하다",
+      "4": "보장하다",
+      "5": "발전시키다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'prevent' mean?",
+    "options": {
+      "1": "관찰하다",
+      "2": "방지하다, 막다",
+      "3": "지원하다",
+      "4": "출판하다, 발표하다",
+      "5": "보존하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'prioritize' mean?",
+    "options": {
+      "1": "요청하다",
+      "2": "예측하다",
+      "3": "용서하다",
+      "4": "감독하다",
+      "5": "우선시하다, 우선 순위를 매기다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'process' mean?",
+    "options": {
+      "1": "관찰하다",
+      "2": "보급하다",
+      "3": "배우다",
+      "4": "무시하다",
+      "5": "처리하다, 과정"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'produce' mean?",
+    "options": {
+      "1": "인정하다",
+      "2": "보존하다",
+      "3": "유도하다",
+      "4": "생산하다, 만들어내다",
+      "5": "동반하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'promote' mean?",
+    "options": {
+      "1": "실패하다",
+      "2": "보호하다, 지키다",
+      "3": "단순화하다",
+      "4": "촉진하다, 승진시키다",
+      "5": "무시하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'protect' mean?",
+    "options": {
+      "1": "보호하다",
+      "2": "인정하다",
+      "3": "용서하다",
+      "4": "보급하다",
+      "5": "보호하다, 지키다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'provide' mean?",
+    "options": {
+      "1": "배우다",
+      "2": "참석하다",
+      "3": "기대하다",
+      "4": "희망하다",
+      "5": "제공하다, 공급하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'publish' mean?",
+    "options": {
+      "1": "조사하다",
+      "2": "보장하다",
+      "3": "변화시키다",
+      "4": "출판하다, 발표하다",
+      "5": "보급하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'purchase' mean?",
+    "options": {
+      "1": "구매하다",
+      "2": "지원하다",
+      "3": "추진하다",
+      "4": "반대하다",
+      "5": "참석하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'pursue' mean?",
+    "options": {
+      "1": "승인하다",
+      "2": "추진하다",
+      "3": "추구하다, 뒤쫓다",
+      "4": "요구하다",
+      "5": "이해하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'qualify' mean?",
+    "options": {
+      "1": "비난하다",
+      "2": "자격을 갖추다, 제한하다",
+      "3": "의심하다",
+      "4": "기대하다",
+      "5": "지원하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'quantify' mean?",
+    "options": {
+      "1": "요청하다",
+      "2": "올리다, 기르다",
+      "3": "양을 재다, 수량화하다",
+      "4": "추진하다",
+      "5": "감독하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'question' mean?",
+    "options": {
+      "1": "기여하다",
+      "2": "감사하다",
+      "3": "제거하다",
+      "4": "수용하다",
+      "5": "질문하다, 의문"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'quote' mean?",
+    "options": {
+      "1": "요구하다",
+      "2": "인용하다, 견적을 내다",
+      "3": "올리다, 기르다",
+      "4": "수용하다",
+      "5": "단순화하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'raise' mean?",
+    "options": {
+      "1": "유도하다",
+      "2": "협상하다",
+      "3": "올리다, 기르다",
+      "4": "보급하다",
+      "5": "추천하다, 권하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'realize' mean?",
+    "options": {
+      "1": "설득하다",
+      "2": "유도하다",
+      "3": "실패하다",
+      "4": "깨닫다, 실현하다",
+      "5": "평가하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'recognize' mean?",
+    "options": {
+      "1": "진행하다",
+      "2": "인식하다, 인정하다",
+      "3": "동의하다",
+      "4": "지원하다",
+      "5": "의심하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'recommend' mean?",
+    "options": {
+      "1": "증명하다",
+      "2": "통보하다",
+      "3": "지속하다",
+      "4": "동의하다",
+      "5": "추천하다, 권하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'reduce' mean?",
+    "options": {
+      "1": "가리키다",
+      "2": "거절하다, 거부하다",
+      "3": "줄이다, 감소시키다",
+      "4": "강화하다, 보강하다",
+      "5": "규제하다, 조절하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'refer' mean?",
+    "options": {
+      "1": "언급하다, 참조하다",
+      "2": "진행하다",
+      "3": "지속하다",
+      "4": "압박하다",
+      "5": "실패하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'reflect' mean?",
+    "options": {
+      "1": "응원하다",
+      "2": "규제하다, 조절하다",
+      "3": "요청하다",
+      "4": "다양화하다",
+      "5": "반영하다, 반사하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'refuse' mean?",
+    "options": {
+      "1": "유도하다",
+      "2": "방해하다",
+      "3": "생산하다",
+      "4": "풀어주다, 출시하다",
+      "5": "거절하다, 거부하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'regard' mean?",
+    "options": {
+      "1": "개선하다",
+      "2": "인정하다",
+      "3": "간주하다, 주목하다",
+      "4": "관리하다",
+      "5": "실패하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'regulate' mean?",
+    "options": {
+      "1": "보장하다",
+      "2": "고려하다",
+      "3": "지속하다",
+      "4": "규제하다, 조절하다",
+      "5": "기여하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'reinforce' mean?",
+    "options": {
+      "1": "요청하다",
+      "2": "비난하다",
+      "3": "단순화하다",
+      "4": "강화하다, 보강하다",
+      "5": "동반하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'reject' mean?",
+    "options": {
+      "1": "희망하다",
+      "2": "보급하다",
+      "3": "거절하다, 거부하다",
+      "4": "고려하다",
+      "5": "관찰하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'relate' mean?",
+    "options": {
+      "1": "설명하다",
+      "2": "검토하다",
+      "3": "연관시키다, 관련이 있다",
+      "4": "모험하다",
+      "5": "증명하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'release' mean?",
+    "options": {
+      "1": "보급하다",
+      "2": "기대하다",
+      "3": "완성하다",
+      "4": "풀어주다, 출시하다",
+      "5": "압박하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'rely' mean?",
+    "options": {
+      "1": "보장하다",
+      "2": "지속하다",
+      "3": "의존하다, 믿다",
+      "4": "회복하다",
+      "5": "대체하다, 교체하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'remain' mean?",
+    "options": {
+      "1": "남다, 유지하다",
+      "2": "응원하다",
+      "3": "복제하다",
+      "4": "관찰하다",
+      "5": "협상하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'remark' mean?",
+    "options": {
+      "1": "유도하다",
+      "2": "언급하다, 말하다",
+      "3": "예측하다",
+      "4": "제안하다",
+      "5": "강화하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'remove' mean?",
+    "options": {
+      "1": "수리하다, 고치다",
+      "2": "배우다",
+      "3": "제거하다, 없애다",
+      "4": "취소하다",
+      "5": "요청하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'repair' mean?",
+    "options": {
+      "1": "보호하다",
+      "2": "응원하다",
+      "3": "취소하다",
+      "4": "수리하다, 고치다",
+      "5": "동의하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'replace' mean?",
+    "options": {
+      "1": "압박하다",
+      "2": "다양화하다",
+      "3": "발전시키다",
+      "4": "대체하다, 교체하다",
+      "5": "개선하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'represent' mean?",
+    "options": {
+      "1": "희망하다",
+      "2": "생산하다",
+      "3": "대표하다, 나타내다",
+      "4": "완성하다",
+      "5": "동반하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'require' mean?",
+    "options": {
+      "1": "의심하다",
+      "2": "지원하다",
+      "3": "용서하다",
+      "4": "유도하다",
+      "5": "요구하다, 필요로 하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'rescue' mean?",
+    "options": {
+      "1": "지속하다",
+      "2": "구조하다, 구출하다",
+      "3": "평가하다",
+      "4": "비난하다",
+      "5": "설명하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'research' mean?",
+    "options": {
+      "1": "취소하다",
+      "2": "용서하다",
+      "3": "고려하다",
+      "4": "연구하다, 조사하다",
+      "5": "구현하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'resolve' mean?",
+    "options": {
+      "1": "설명하다",
+      "2": "동의하다",
+      "3": "해결하다, 결심하다",
+      "4": "기여하다",
+      "5": "변화시키다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'respond' mean?",
+    "options": {
+      "1": "응답하다, 반응하다",
+      "2": "지원하다",
+      "3": "응원하다",
+      "4": "기대하다",
+      "5": "모험하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'restrict' mean?",
+    "options": {
+      "1": "회복하다",
+      "2": "실패하다",
+      "3": "제한하다, 금지하다",
+      "4": "설득하다",
+      "5": "보존하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'retain' mean?",
+    "options": {
+      "1": "감독하다",
+      "2": "기대하다",
+      "3": "검토하다",
+      "4": "관리하다",
+      "5": "유지하다, 보유하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'retrieve' mean?",
+    "options": {
+      "1": "되찾다, 회수하다",
+      "2": "무시하다",
+      "3": "검토하다, 평가하다",
+      "4": "완성하다",
+      "5": "취소하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'review' mean?",
+    "options": {
+      "1": "기여하다",
+      "2": "검토하다, 평가하다",
+      "3": "요구하다",
+      "4": "압박하다",
+      "5": "구현하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'revise' mean?",
+    "options": {
+      "1": "생산하다",
+      "2": "수정하다, 개정하다",
+      "3": "강요하다",
+      "4": "연구하다",
+      "5": "감독하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'rise' mean?",
+    "options": {
+      "1": "완성하다",
+      "2": "오르다, 증가하다",
+      "3": "방해하다",
+      "4": "제안하다",
+      "5": "단언하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'satisfy' mean?",
+    "options": {
+      "1": "인정하다",
+      "2": "반대하다",
+      "3": "개선하다",
+      "4": "복제하다",
+      "5": "만족시키다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'schedule' mean?",
+    "options": {
+      "1": "전달하다",
+      "2": "변화시키다",
+      "3": "일정, 계획을 세우다",
+      "4": "조정하다",
+      "5": "발전시키다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'secure' mean?",
+    "options": {
+      "1": "희망하다",
+      "2": "공유하다, 나누다",
+      "3": "통보하다",
+      "4": "안전하게 하다, 확보하다",
+      "5": "해결하다, 정착하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'select' mean?",
+    "options": {
+      "1": "개선하다",
+      "2": "구현하다",
+      "3": "선택하다, 선발하다",
+      "4": "증명하다",
+      "5": "고려하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'separate' mean?",
+    "options": {
+      "1": "분리하다, 나누다",
+      "2": "추진하다",
+      "3": "검토하다",
+      "4": "창조하다",
+      "5": "지속하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'serve' mean?",
+    "options": {
+      "1": "제공하다, 섬기다",
+      "2": "해결하다",
+      "3": "보급하다",
+      "4": "공유하다, 나누다",
+      "5": "검토하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'settle' mean?",
+    "options": {
+      "1": "해결하다",
+      "2": "해결하다, 정착하다",
+      "3": "전달하다",
+      "4": "완성하다",
+      "5": "기여하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'share' mean?",
+    "options": {
+      "1": "공유하다, 나누다",
+      "2": "의심하다",
+      "3": "관찰하다",
+      "4": "요구하다",
+      "5": "조직하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'simplify' mean?",
+    "options": {
+      "1": "단언하다",
+      "2": "압박하다",
+      "3": "단순화하다",
+      "4": "변화시키다",
+      "5": "모험하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'solve' mean?",
+    "options": {
+      "1": "해결하다",
+      "2": "단언하다",
+      "3": "이해하다",
+      "4": "강요하다",
+      "5": "조직하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'specify' mean?",
+    "options": {
+      "1": "비난하다",
+      "2": "명시하다, 구체화하다",
+      "3": "설득하다",
+      "4": "참석하다",
+      "5": "기여하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'sponsor' mean?",
+    "options": {
+      "1": "후원하다, 스폰서",
+      "2": "설명하다",
+      "3": "반대하다",
+      "4": "제안하다",
+      "5": "고안하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'start' mean?",
+    "options": {
+      "1": "동의하다",
+      "2": "시작하다",
+      "3": "지지하다, 지원하다",
+      "4": "반대하다",
+      "5": "유도하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'state' mean?",
+    "options": {
+      "1": "가리키다",
+      "2": "관찰하다",
+      "3": "상태, 말하다",
+      "4": "동반하다",
+      "5": "고려하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'stimulate' mean?",
+    "options": {
+      "1": "지원하다",
+      "2": "반영하다",
+      "3": "인정하다",
+      "4": "자극하다, 활발하게 하다",
+      "5": "연구하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'structure' mean?",
+    "options": {
+      "1": "구조, 조직하다",
+      "2": "참석하다",
+      "3": "방해하다",
+      "4": "반영하다",
+      "5": "보존하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'submit' mean?",
+    "options": {
+      "1": "비난하다",
+      "2": "희망하다",
+      "3": "제출하다, 복종하다",
+      "4": "지원하다",
+      "5": "반대하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'suggest' mean?",
+    "options": {
+      "1": "감독하다",
+      "2": "보존하다",
+      "3": "발전시키다",
+      "4": "응원하다",
+      "5": "제안하다, 암시하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'summarize' mean?",
+    "options": {
+      "1": "반영하다",
+      "2": "허가하다",
+      "3": "요약하다",
+      "4": "희망하다",
+      "5": "고려하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'supervise' mean?",
+    "options": {
+      "1": "개선하다",
+      "2": "이해하다",
+      "3": "실패하다",
+      "4": "감독하다, 관리하다",
+      "5": "다양화하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'supply' mean?",
+    "options": {
+      "1": "공급하다",
+      "2": "고려하다",
+      "3": "추진하다",
+      "4": "취소하다",
+      "5": "기여하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'support' mean?",
+    "options": {
+      "1": "지지하다, 지원하다",
+      "2": "모험하다",
+      "3": "지속하다",
+      "4": "진행하다",
+      "5": "차별하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'suppress' mean?",
+    "options": {
+      "1": "대처하다",
+      "2": "참석하다",
+      "3": "억누르다, 진압하다",
+      "4": "보존하다",
+      "5": "응원하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'surpass' mean?",
+    "options": {
+      "1": "요청하다",
+      "2": "관찰하다",
+      "3": "무시하다",
+      "4": "능가하다, 초과하다",
+      "5": "회복하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'survive' mean?",
+    "options": {
+      "1": "희망하다",
+      "2": "변화시키다",
+      "3": "용서하다",
+      "4": "생존하다, 살아남다",
+      "5": "압박하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'suspend' mean?",
+    "options": {
+      "1": "실패하다",
+      "2": "강요하다",
+      "3": "중단하다, 매달다",
+      "4": "고려하다",
+      "5": "생산하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'sustain' mean?",
+    "options": {
+      "1": "설득하다",
+      "2": "보호하다",
+      "3": "희망하다",
+      "4": "지탱하다, 유지하다",
+      "5": "추진하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'synthesize' mean?",
+    "options": {
+      "1": "완성하다",
+      "2": "의심하다",
+      "3": "단언하다",
+      "4": "생산하다",
+      "5": "합성하다, 종합하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'target' mean?",
+    "options": {
+      "1": "진행하다",
+      "2": "유도하다",
+      "3": "증언하다, 증명하다",
+      "4": "생산하다",
+      "5": "목표, 목표로 삼다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'teach' mean?",
+    "options": {
+      "1": "검토하다",
+      "2": "조정하다",
+      "3": "진행하다",
+      "4": "가르치다",
+      "5": "완성하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'terminate' mean?",
+    "options": {
+      "1": "배우다",
+      "2": "응원하다",
+      "3": "허가하다",
+      "4": "종결하다, 끝내다",
+      "5": "모험하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'testify' mean?",
+    "options": {
+      "1": "관리하다",
+      "2": "강요하다",
+      "3": "증언하다, 증명하다",
+      "4": "보장하다",
+      "5": "실패하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'train' mean?",
+    "options": {
+      "1": "훈련하다, 교육하다",
+      "2": "기여하다",
+      "3": "방해하다",
+      "4": "증명하다",
+      "5": "변형하다, 바꾸다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'transfer' mean?",
+    "options": {
+      "1": "옮기다, 이동하다",
+      "2": "이해하다",
+      "3": "변화시키다",
+      "4": "설명하다",
+      "5": "반영하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'transform' mean?",
+    "options": {
+      "1": "회복하다",
+      "2": "설득하다",
+      "3": "번역하다, 해석하다",
+      "4": "변형하다, 바꾸다",
+      "5": "창조하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'translate' mean?",
+    "options": {
+      "1": "겪다, 경험하다",
+      "2": "조정하다",
+      "3": "무시하다",
+      "4": "취소하다",
+      "5": "번역하다, 해석하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'transmit' mean?",
+    "options": {
+      "1": "전송하다, 전달하다",
+      "2": "고안하다",
+      "3": "착수하다, 떠맡다",
+      "4": "검토하다",
+      "5": "보급하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'transport' mean?",
+    "options": {
+      "1": "운송하다, 수송하다",
+      "2": "감소하다",
+      "3": "창조하다",
+      "4": "요청하다",
+      "5": "비난하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'undergo' mean?",
+    "options": {
+      "1": "차별하다",
+      "2": "확신하다",
+      "3": "기여하다",
+      "4": "배우다",
+      "5": "겪다, 경험하다"
+    },
+    "answer": "5"
+  },
+  {
+    "question": "What does the word 'understand' mean?",
+    "options": {
+      "1": "감소하다",
+      "2": "이해하다, 알아듣다",
+      "3": "유도하다",
+      "4": "제안하다",
+      "5": "이해하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'undertake' mean?",
+    "options": {
+      "1": "착수하다, 떠맡다",
+      "2": "검토하다",
+      "3": "관리하다",
+      "4": "진행하다",
+      "5": "방해하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'unite' mean?",
+    "options": {
+      "1": "수용하다",
+      "2": "동의하다",
+      "3": "감독하다",
+      "4": "통합하다, 연합하다",
+      "5": "실패하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'update' mean?",
+    "options": {
+      "1": "고려하다",
+      "2": "발전시키다",
+      "3": "갱신하다, 최신 정보",
+      "4": "의심하다",
+      "5": "차별하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'upgrade' mean?",
+    "options": {
+      "1": "업그레이드하다, 개선하다",
+      "2": "무시하다",
+      "3": "검토하다",
+      "4": "취소하다",
+      "5": "협상하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'uphold' mean?",
+    "options": {
+      "1": "지지하다, 유지하다",
+      "2": "수용하다",
+      "3": "실패하다",
+      "4": "조직하다",
+      "5": "차별하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'use' mean?",
+    "options": {
+      "1": "동의하다",
+      "2": "반대하다",
+      "3": "복제하다",
+      "4": "사용하다",
+      "5": "응원하다"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "What does the word 'utilize' mean?",
+    "options": {
+      "1": "개선하다",
+      "2": "활용하다, 이용하다",
+      "3": "전달하다",
+      "4": "감독하다",
+      "5": "확인하다, 검증하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'validate' mean?",
+    "options": {
+      "1": "인정하다",
+      "2": "단언하다",
+      "3": "유효하게 하다, 확인하다",
+      "4": "설득하다",
+      "5": "구현하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'value' mean?",
+    "options": {
+      "1": "확신하다",
+      "2": "가치, 평가하다",
+      "3": "제거하다",
+      "4": "추진하다",
+      "5": "고려하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'verify' mean?",
+    "options": {
+      "1": "대처하다",
+      "2": "감소하다",
+      "3": "확인하다, 검증하다",
+      "4": "복제하다",
+      "5": "조직하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'view' mean?",
+    "options": {
+      "1": "보다, 관점",
+      "2": "완성하다",
+      "3": "회복하다",
+      "4": "용서하다",
+      "5": "강요하다"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the word 'visit' mean?",
+    "options": {
+      "1": "감사하다",
+      "2": "생산하다",
+      "3": "방문하다",
+      "4": "진행하다",
+      "5": "예측하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'volunteer' mean?",
+    "options": {
+      "1": "강요하다",
+      "2": "자원하다, 지원자",
+      "3": "관리하다",
+      "4": "기대하다",
+      "5": "무시하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'widen' mean?",
+    "options": {
+      "1": "추진하다",
+      "2": "비난하다",
+      "3": "확장하다, 넓히다",
+      "4": "지속하다",
+      "5": "관리하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'withdraw' mean?",
+    "options": {
+      "1": "고려하다",
+      "2": "철회하다, 인출하다",
+      "3": "용서하다",
+      "4": "조정하다",
+      "5": "연구하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'withstand' mean?",
+    "options": {
+      "1": "제거하다",
+      "2": "견디다, 저항하다",
+      "3": "구현하다",
+      "4": "가리키다",
+      "5": "복제하다"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the word 'work' mean?",
+    "options": {
+      "1": "차별하다",
+      "2": "보장하다",
+      "3": "일하다, 작업",
+      "4": "지속하다",
+      "5": "이해하다"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the word 'write' mean?",
+    "options": {
+      "1": "연구하다",
+      "2": "구현하다",
+      "3": "쓰다, 작성하다",
+      "4": "기여하다",
+      "5": "압박하다"
+    },
+    "answer": "3"
+  }
+]
