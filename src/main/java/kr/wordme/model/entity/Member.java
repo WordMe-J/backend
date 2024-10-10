@@ -3,10 +3,7 @@ package kr.wordme.model.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -30,6 +27,7 @@ public class Member implements UserDetails {
     private String email;
 
     @Column(name = "nickname")
+    @Getter
     private String nickname;
 
     @Column(name = "password")
@@ -58,4 +56,5 @@ public class Member implements UserDetails {
     public String getUsername() {
         return email;
     }
+
 }
