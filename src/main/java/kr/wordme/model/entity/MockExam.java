@@ -7,6 +7,7 @@ import java.util.UUID;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -39,6 +40,11 @@ public class MockExam {
 	@Column(name = "time_limit_in_minutes")
 	private Integer timeLimitInMinutes;
 
-	@OneToMany(mappedBy = "mockExam", fetch = FetchType.LAZY)
+	@OneToMany(
+		mappedBy = "mockExam",
+		fetch = FetchType.LAZY,
+		cascade = {CascadeType.PERSIST, CascadeType.REMOVE, CascadeType.MERGE},
+		orphanRemoval = true
+	)
 	private List<MockExamQuestion> questions;
 }

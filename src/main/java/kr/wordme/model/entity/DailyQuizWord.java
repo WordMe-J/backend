@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 import java.util.List;
 import java.util.UUID;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -35,6 +36,11 @@ public class DailyQuizWord {
 	@Column(name = "quiz_date")
 	private Timestamp quizDate;
 
-	@OneToMany(mappedBy = "dailyQuizWord", fetch = FetchType.LAZY)
+	@OneToMany(
+		mappedBy = "dailyQuizWord",
+		fetch = FetchType.LAZY,
+		cascade = {CascadeType.PERSIST, CascadeType.REMOVE, CascadeType.MERGE},
+		orphanRemoval = true
+	)
 	private List<DailyQuizDistractor> dailyQuizDistractors;
 }

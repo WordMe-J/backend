@@ -3,6 +3,7 @@ package kr.wordme.model.entity;
 import java.util.List;
 import java.util.UUID;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -30,6 +31,11 @@ public class MockExamQuestion {
 	@Column(name = "question_text", columnDefinition = "TEXT")
 	private String questionText;
 
-	@OneToMany(mappedBy = "mockExamQuestion", fetch = FetchType.LAZY)
+	@OneToMany(
+		mappedBy = "mockExamQuestion",
+		fetch = FetchType.LAZY,
+		cascade = {CascadeType.PERSIST, CascadeType.REMOVE, CascadeType.MERGE},
+		orphanRemoval = true
+	)
 	private List<MockExamDistractor> distractors;
 }

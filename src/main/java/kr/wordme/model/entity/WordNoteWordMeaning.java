@@ -26,6 +26,6 @@ public class WordNoteWordMeaning {
 	@JoinColumn(name = "word_note_word_id")
 	private WordNoteWord wordNoteWord;
 
-	@Column(name = "meaning", nullable = true)
+	@Column(name = "meaning")
 	private String meaning;
 }

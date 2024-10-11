@@ -34,7 +34,7 @@ public class Member {
 	@CreationTimestamp
 	private Timestamp createdAt;
 
-	@Column(name = "is_deleted", nullable = false)
+	@Column(name = "is_deleted", columnDefinition = "TINYINT(1)", nullable = false)
 	private Boolean isDeleted;
 
 }

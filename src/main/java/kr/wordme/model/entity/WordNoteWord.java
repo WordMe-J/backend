@@ -1,11 +1,12 @@
 package kr.wordme.model.entity;
 
 import java.sql.Timestamp;
-import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -38,6 +39,19 @@ public class WordNoteWord {
 	@CreationTimestamp
 	private Timestamp createdAt;
 
-	@OneToMany(mappedBy = "wordNoteWord", fetch = FetchType.LAZY)
-	private List<WordNoteWordMeaning> wordNoteWordMeanings;
+	@OneToMany(
+		mappedBy = "wordNoteWord",
+		fetch = FetchType.LAZY,
+		cascade = {CascadeType.PERSIST, CascadeType.REMOVE, CascadeType.MERGE},
+		orphanRemoval = true
+	)
+	private Set<WordNoteWordMeaning> wordNoteWordMeanings;
+
+	@OneToMany(
+		mappedBy = "wordNoteWord",
+		fetch = FetchType.LAZY,
+		cascade = {CascadeType.PERSIST, CascadeType.REMOVE, CascadeType.MERGE},
+		orphanRemoval = true
+	)
+	private Set<WordNoteWordTag> wordNoteWordTags;
 }
