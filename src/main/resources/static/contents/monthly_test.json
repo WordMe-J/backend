@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "question": "Directions: Read the following passage and answer the question.\n\nThe recent trend in remote working has reshaped how companies approach their workforce management. Many companies are adopting hybrid work models that offer employees greater flexibility in balancing personal and professional responsibilities. However, some concerns about productivity and employee engagement remain.\n\nWhat is the primary concern mentioned in the passage regarding remote work?",
+      "options": [
+        "A) Reduced operational costs.",
+        "B) Increased employee satisfaction.",
+        "C) Concerns about productivity.",
+        "D) Difficulty in recruiting new talent.",
+        "E) Lack of digital resources."
+      ],
+      "correct_answer": "C",
+      "difficulty": 35
+    },
+    {
+      "question": "Directions: Choose the word or phrase that best completes the sentence.\n\nThe CEO’s speech _______ the importance of adapting to new market conditions in order to stay competitive.",
+      "options": [
+        "A) undermined",
+        "B) emphasized",
+        "C) postponed",
+        "D) contradicted",
+        "E) dismissed"
+      ],
+      "correct_answer": "B",
+      "difficulty": 30
+    },
+    {
+      "question": "Directions: Read the following passage and answer the question.\n\nDespite the technological advances that have transformed industries worldwide, small businesses still face significant challenges in integrating new systems into their operations. Financial limitations, lack of expertise, and the rapid pace of technological change often prevent smaller companies from fully benefiting from innovations that larger corporations readily adopt.\n\nAccording to the passage, what is one reason small businesses struggle with technological advancements?",
+      "options": [
+        "A) Lack of motivation.",
+        "B) Financial constraints.",
+        "C) Resistance to change.",
+        "D) Overreliance on outdated systems.",
+        "E) Government regulations."
+      ],
+      "correct_answer": "B",
+      "difficulty": 30
+    },
+    {
+      "question": "Directions: Select the word that best fits the context of the sentence.\n\nThe manager was highly _______ of the team's efforts to complete the project on time despite several obstacles.",
+      "options": [
+        "A) critical",
+        "B) appreciative",
+        "C) skeptical",
+        "D) indifferent",
+        "E) unaware"
+      ],
+      "correct_answer": "B",
+      "difficulty": 25
+    },
+    {
+      "question": "Directions: Read the email and answer the question.\n\nSubject: Meeting Rescheduled\n\nDear Team,\n\nDue to unforeseen circumstances, the project meeting scheduled for this Friday has been moved to next Monday at 10:00 AM. Please make sure to adjust your calendars accordingly. If this new time poses any conflicts, do let me know at your earliest convenience.\n\nThank you for your understanding.\n\nBest regards,\n\nJane\n\nWhat is the purpose of this email?",
+      "options": [
+        "A) To announce a change in the meeting date.",
+        "B) To cancel the upcoming project meeting.",
+        "C) To provide details about the project.",
+        "D) To request availability for a future meeting.",
+        "E) To introduce a new team member."
+      ],
+      "correct_answer": "A",
+      "difficulty": 25
+    },
+    {
+      "question": "Directions: Complete the sentence with the correct phrase.\n\nAlthough the new software was initially challenging to use, the employees eventually _______ to its features and began to find it more efficient.",
+      "options": [
+        "A) adapted",
+        "B) opposed",
+        "C) relented",
+        "D) objected",
+        "E) deferred"
+      ],
+      "correct_answer": "A",
+      "difficulty": 20
+    },
+    {
+      "question": "Directions: Read the following passage and answer the question.\n\nA recent study revealed that companies with flexible work policies tend to attract a higher percentage of skilled workers. The ability to work remotely or have flexible hours has become a critical factor for job seekers, particularly in competitive fields such as technology and marketing. In response, many companies are revising their policies to offer more flexible options, hoping to maintain a competitive edge in recruitment and retention.\n\nWhat is the main idea of the passage?",
+      "options": [
+        "A) Flexible work policies increase operational costs.",
+        "B) Companies with flexible work policies are less productive.",
+        "C) Flexible work options are now essential in attracting top talent.",
+        "D) Job seekers are less concerned about work flexibility.",
+        "E) Flexible work policies are declining in popularity."
+      ],
+      "correct_answer": "C",
+      "difficulty": 20
+    },
+    {
+      "question": "Directions: Choose the best word or phrase to complete the sentence.\n\nThe new software update, which _______ several critical bugs, was well received by the users.",
+      "options": [
+        "A) introduced",
+        "B) resolved",
+        "C) created",
+        "D) complicated",
+        "E) ignored"
+      ],
+      "correct_answer": "B",
+      "difficulty": 15
+    },
+    {
+      "question": "Directions: Read the following passage and answer the question.\n\nMany companies have begun to implement sustainability initiatives in their operations, driven by both environmental concerns and consumer demand. These initiatives often include reducing waste, minimizing energy consumption, and sourcing materials responsibly. While the transition to more sustainable practices can be costly, many organizations report long-term savings and enhanced brand reputation.\n\nAccording to the passage, what is one benefit of implementing sustainability initiatives?",
+      "options": [
+        "A) Higher immediate profits.",
+        "B) Long-term cost savings.",
+        "C) Increased production speed.",
+        "D) Simplified operations.",
+        "E) Fewer government regulations."
+      ],
+      "correct_answer": "B",
+      "difficulty": 15
+    },
+    {
+      "question": "Directions: Select the best word to complete the sentence.\n\nThe _______ nature of the project requires that all team members communicate frequently and work together closely to meet deadlines.",
+      "options": [
+        "A) solitary",
+        "B) collaborative",
+        "C) optional",
+        "D) remote",
+        "E) disjointed"
+      ],
+      "correct_answer": "B",
+      "difficulty": 15
+    }
+  ]
+}
