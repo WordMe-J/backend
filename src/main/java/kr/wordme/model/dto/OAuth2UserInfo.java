@@ -18,14 +18,11 @@ public class OAuth2UserInfo {
     private String provider;
 
     public static OAuth2UserInfo of(String provider, Map<String, Object> attributes) throws IllegalAccessException {
-        switch (provider) {
-            case "google" :
-                return ofGoogle(attributes);
-            case "naver":
-                return ofNaver(attributes);
-            default:
-                throw new IllegalAccessException("지원 안하는 oauth2임");
-        }
+        return switch (provider) {
+            case "google" -> ofGoogle(attributes);
+            case "naver" -> ofNaver(attributes);
+            default -> throw new IllegalAccessException("지원 안하는 oauth2임");
+        };
     }
 
     private static OAuth2UserInfo ofNaver(Map<String, Object> attributes) {
