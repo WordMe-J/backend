@@ -3,7 +3,9 @@ package kr.wordme.model.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import kr.wordme.model.dto.request.SignupRequestDTO;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -35,12 +37,13 @@ public class Member implements UserDetails {
 
     @Column(name = "created_at")
     private Timestamp created_at;
+
     @Column(name = "is_deleted")
     private Boolean is_deleted;
 
-    public void passwordEncode(PasswordEncoder passwordEncoder) {
-        this.password = passwordEncoder.encode(this.password);
-    }
+//    public void passwordEncode(PasswordEncoder passwordEncoder) {
+//        this.password = passwordEncoder.encode(this.password);
+//    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -57,4 +60,13 @@ public class Member implements UserDetails {
         return email;
     }
 
+    public static Member newInstance(SignupRequestDTO dto, String encodedPassword) {
+        return Member.builder()
+                .id(UUID.randomUUID())
+                .email(dto.getEmail())
+                .nickname(dto.getNickname())
+                .password(encodedPassword)
+                .is_deleted(false)
+                .build();
+    }
 }

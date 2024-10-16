@@ -1,7 +1,10 @@
 package kr.wordme.service;
 
+import kr.wordme.exception.ErrorCode;
+import kr.wordme.exception.member.DuplicateEmailException;
+import kr.wordme.exception.member.MemberNonExistentException;
 import kr.wordme.model.dto.JwtDTO;
-import kr.wordme.model.dto.request.signupRequestDTO;
+import kr.wordme.model.dto.request.SignupRequestDTO;
 import kr.wordme.model.entity.Member;
 import kr.wordme.repository.MemberRepository;
 import kr.wordme.util.JwtUtil;
@@ -23,42 +26,38 @@ public class MemberService implements UserDetailsService {
     private final PasswordEncoder passwordEncoder;
     private final JwtUtil jwtUtil;
 
-    public Optional<Member> findByEmail(String email) {
-        return memberRepository.findByEmail(email);
+    public Member findByEmail(String email) {
+        return memberRepository.findByEmail(email).orElseThrow(
+                ()->new MemberNonExistentException(
+                        ErrorCode.NOT_EXIST_USER.getStatus(),
+                        ErrorCode.NOT_EXIST_USER.getMessage()
+                )
+        );
     }
-
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        return getMemberByEmail(email);
+        return findByEmail(email);
     }
 
-    public Member signUp(signupRequestDTO signupRequestDTO) throws IllegalAccessException {
+    public Member signUp(SignupRequestDTO signupRequestDTO) throws IllegalAccessException {
         if (memberRepository.existsByEmail(signupRequestDTO.getEmail())) {
-            throw new IllegalAccessException("사용 중인 이메일 입니다.");
+            throw new DuplicateEmailException(
+                    ErrorCode.DUPLICATE_EMAIL.getStatus(),
+                    ErrorCode.DUPLICATE_EMAIL.getMessage()
+            );
         }
-        return memberRepository.save(Member.builder()
-                .id(UUID.randomUUID())
-                .password(passwordEncoder.encode(signupRequestDTO.getPassword()))
-                .nickname(signupRequestDTO.getNickname())
-                .is_deleted(false)
-                .email(signupRequestDTO.getEmail())
-                .build());
+        String encodedPassword = passwordEncoder.encode(signupRequestDTO.getPassword());
+        return memberRepository.save(Member.newInstance(signupRequestDTO, encodedPassword));
     }
 
-    private Member getMemberByEmail(String email) {
-        return memberRepository.findByEmail(email)
-                .orElseThrow(()-> new UsernameNotFoundException("username Not Found"));
-    }
-
-    public JwtDTO signIn(signupRequestDTO dto) {
-        Member member = getMemberByEmail(dto.getEmail());
+    public JwtDTO signIn(SignupRequestDTO dto) {
+        Member member = findByEmail(dto.getEmail());
 
         if(!passwordEncoder.matches(dto.getPassword(), member.getPassword())) {
             throw new BadCredentialsException("wrong password");
+//            비번 틀렸을 때 spring security err 로 넘김
         }
-
         return jwtUtil.createToken(member.getUsername(), "ROLE_USER");
     }
-
 }
