@@ -9,7 +9,8 @@ import org.springframework.http.HttpStatus;
 public enum ErrorCode {
     NOT_EXIST_USER(HttpStatus.NOT_FOUND, "non-existent user"),
     DUPLICATE_EMAIL(HttpStatus.BAD_REQUEST, "duplicated email"),
-    FAIL_SEND_EMAIL(HttpStatus.BAD_REQUEST,"fail to send email");
+    FAIL_SEND_EMAIL(HttpStatus.BAD_REQUEST,"fail to send email"),
+    NOT_EXIST_TOKEN(HttpStatus.CONFLICT, "token IS null");
 
     private final HttpStatus status;
     private final String message;
