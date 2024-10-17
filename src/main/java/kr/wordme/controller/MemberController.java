@@ -71,7 +71,8 @@ public class MemberController {
         if (!ObjectUtils.isEmpty(member)) {
             infoDTO = MemberInfoResponseDTO.from(member);
         }
-//        filter 에서 쿠키 확인 후 쿠키가 없다면 null 로 응답
+//        filter 에서 쿠키 확인 후 쿠키가 없다면 null 로 응답...
+//        -> 클라이언트 로그인 필요하다는 alert 창
         return ResponseEntity.ok().body(infoDTO);
     }
 
@@ -79,8 +80,13 @@ public class MemberController {
     public ResponseEntity<Object> sendEmail(@RequestParam("email") String email) throws MessagingException {
         memberService.duplicatedEmail(email); //메일 중복
         mailService.sendEmail(email); //검증 링크 전송
+        /**
+         * 1. 검증 링크 클릭 시 회원가입 화면으로 리다이렉트
+         * 2. /verify endpoint 에서 이메일 토큰 유효한지 검증 (10분으로 설정)
+         * 3. 이메일 토큰이 유효하면 true 로 응답
+         * **/
 
-//        temp : 링크 클릭하면 boolean 담긴 dto 반환하도록 구현
+//        temp : postman 사용으로 링크 클릭하면 boolean 담긴 dto 반환하도록 구현
         return ResponseEntity.ok().body(new CustomResponseMessage("success to send email"));
     }
 

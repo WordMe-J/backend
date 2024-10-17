@@ -36,8 +36,10 @@ public class JwtAuthUtil {
         Claims refreshClaims = jwtUtil.getClaims(jwtDTO.getRefreshToken());
 
         if(accessClaims == null && refreshClaims != null) {
+//            accessToken 만 만료
             return jwtUtil.createNewAccessToken(refreshClaims);
-        } else if (accessClaims == null && refreshClaims == null) {
+        } else if (accessClaims == null) {
+//            refreshToken 도 만료되면 new Access Token 은 null...
             return null;
         } else {
             throw new TokenException(
