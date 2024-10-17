@@ -95,7 +95,7 @@ public class JwtUtil {
                     .parseClaimsJws(token)
                     .getBody();
         } catch (ExpiredJwtException e) {
-            claims = e.getClaims();
+            claims = null;
         } catch (Exception e) {
             throw new BadCredentialsException("유효한 토큰이 아닙니다.");
         }

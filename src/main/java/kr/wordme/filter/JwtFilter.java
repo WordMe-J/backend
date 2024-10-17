@@ -24,20 +24,27 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class JwtFilter extends OncePerRequestFilter {
     private final JwtAuthUtil jwtAuthUtil;
+
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         JwtDTO tokens = resolveTokenFromRequest(request);
-
-        if(ObjectUtils.isEmpty(tokens)) {
+        if (ObjectUtils.isEmpty(tokens)) {
             filterChain.doFilter(request, response);
             return;
         }
 
-        if(jwtAuthUtil.validateToken(tokens.getAccessToken())) {
+        if (jwtAuthUtil.validateToken(tokens.getAccessToken())) {
             Authentication auth = jwtAuthUtil.getAUthentication(tokens.getAccessToken());
             SecurityContextHolder.getContext().setAuthentication(auth);
         } else {
             String newAccessToken = jwtAuthUtil.validateToken(tokens);
+            if (!StringUtils.hasText(newAccessToken)) {
+                Cookie[] deleteCookies = cookieDelete();
+                for (Cookie deleteCookie : deleteCookies) {
+                    response.addCookie(deleteCookie);
+                }
+                response.sendRedirect("/");
+            }
 
             Cookie newCookie = new Cookie("access_token", newAccessToken);
             newCookie.setHttpOnly(true);
@@ -50,10 +57,22 @@ public class JwtFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
+    public Cookie[] cookieDelete() {
+        Cookie accessDeleteCookie = new Cookie("access_token", null);
+        accessDeleteCookie.setPath("/");
+        accessDeleteCookie.setMaxAge(0);
+
+        Cookie refreshDeleteCookie = new Cookie("refresh_token", null);
+        refreshDeleteCookie.setMaxAge(0);
+        refreshDeleteCookie.setPath("/");
+
+        return new Cookie[]{accessDeleteCookie, refreshDeleteCookie};
+    }
+
     private JwtDTO resolveTokenFromRequest(HttpServletRequest request) {
         Map<String, String> tokens = new HashMap<>();
         Cookie[] cookies = request.getCookies();
-        if(!ObjectUtils.isEmpty(cookies)) {
+        if (!ObjectUtils.isEmpty(cookies)) {
             for (Cookie cookie : cookies) {
                 if (cookie.getName().equals("access_token")) {
                     tokens.put("accessToken", cookie.getValue());

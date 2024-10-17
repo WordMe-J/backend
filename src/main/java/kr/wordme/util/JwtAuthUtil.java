@@ -35,8 +35,10 @@ public class JwtAuthUtil {
         Claims accessClaims = jwtUtil.getClaims(jwtDTO.getAccessToken());
         Claims refreshClaims = jwtUtil.getClaims(jwtDTO.getRefreshToken());
 
-        if(accessClaims != null && refreshClaims != null && jwtUtil.getSubject(accessClaims).equals(jwtUtil.getSubject(refreshClaims))) {
+        if(accessClaims == null && refreshClaims != null) {
             return jwtUtil.createNewAccessToken(refreshClaims);
+        } else if (accessClaims == null && refreshClaims == null) {
+            return null;
         } else {
             throw new TokenException(
                     ErrorCode.NOT_EXIST_TOKEN.getStatus(),
