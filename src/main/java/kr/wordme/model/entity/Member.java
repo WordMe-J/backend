@@ -37,4 +37,10 @@ public class Member {
 	@Column(name = "is_deleted", columnDefinition = "TINYINT(1)", nullable = false)
 	private Boolean isDeleted;
 
+	@Column(name = "is_daily_quiz_subscribed", columnDefinition = "TINYINT(1)")
+	private Boolean isDailyQuizSubscribed;
+
+	@Column(name = "daily_quiz_subscribed_at")
+	private Timestamp dailyQuizSubscribedAt;
+
 }
