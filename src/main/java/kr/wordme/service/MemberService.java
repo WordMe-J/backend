@@ -1,5 +1,6 @@
 package kr.wordme.service;
 
+import io.jsonwebtoken.Claims;
 import kr.wordme.exception.ErrorCode;
 import kr.wordme.exception.member.DuplicateEmailException;
 import kr.wordme.exception.member.MemberNonExistentException;
@@ -16,15 +17,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-import java.util.UUID;
-
 @Service
 @RequiredArgsConstructor
 public class MemberService implements UserDetailsService {
     private final MemberRepository memberRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtUtil jwtUtil;
+    private final EmailService mailService;
 
     public Member findByEmail(String email) {
         return memberRepository.findByEmail(email).orElseThrow(
@@ -34,19 +33,22 @@ public class MemberService implements UserDetailsService {
                 )
         );
     }
-
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         return findByEmail(email);
     }
 
-    public Member signUp(SignupRequestDTO signupRequestDTO) throws IllegalAccessException {
-        if (memberRepository.existsByEmail(signupRequestDTO.getEmail())) {
+    public void duplicatedEmail(String email) {
+        if(memberRepository.existsByEmail(email)) {
             throw new DuplicateEmailException(
                     ErrorCode.DUPLICATE_EMAIL.getStatus(),
                     ErrorCode.DUPLICATE_EMAIL.getMessage()
             );
         }
+    }
+
+    public Member signUp(SignupRequestDTO signupRequestDTO) {
+        this.duplicatedEmail(signupRequestDTO.getEmail());
         String encodedPassword = passwordEncoder.encode(signupRequestDTO.getPassword());
         return memberRepository.save(Member.newInstance(signupRequestDTO, encodedPassword));
     }
@@ -59,5 +61,10 @@ public class MemberService implements UserDetailsService {
 //            비번 틀렸을 때 spring security err 로 넘김
         }
         return jwtUtil.createToken(member.getUsername(), "ROLE_USER");
+    }
+
+    public boolean verificationEmail(String emailToken) {
+        Claims claims = jwtUtil.getClaims(emailToken);
+        return claims != null;
     }
 }
