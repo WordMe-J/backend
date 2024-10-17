@@ -43,6 +43,15 @@ public class JwtUtil {
                 .signWith(SignatureAlgorithm.HS256, SECRET_KEY)
                 .compact();
     }
+    public String createNewAccessToken(Claims claims) {
+        Date now = new Date();
+        return Jwts.builder()
+                .setClaims(claims)
+                .setIssuedAt(now)
+                .setExpiration(new Date(now.getTime() + ACCESS_EXPIRE_TIME))
+                .signWith(SignatureAlgorithm.HS256, SECRET_KEY)
+                .compact();
+    }
 
     public JwtDTO createToken(String userEmail, String role) {
         String encryptedEmail = Aes256Util.encrypt(userEmail);
@@ -59,7 +68,7 @@ public class JwtUtil {
                 .signWith(SignatureAlgorithm.HS256, SECRET_KEY)
                 .compact();
 
-        claims.setSubject(encryptedEmail);
+//        claims.setSubject(encryptedEmail);
 
         String refreshToken = Jwts.builder()
                 .setClaims(claims)

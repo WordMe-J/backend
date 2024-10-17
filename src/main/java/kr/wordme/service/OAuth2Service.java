@@ -26,16 +26,11 @@ public class OAuth2Service extends DefaultOAuth2UserService {
     @Override
     public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
         OAuth2User oAuth2User = super.loadUser(userRequest);
-        log.info("getAttributes:{}", oAuth2User.getAttributes());
-
         String provider = userRequest.getClientRegistration().getRegistrationId();
-        log.info("provider:{}",provider);
 
         OAuth2UserInfo oAuth2UserInfo = OAuth2UserInfo.of(provider, oAuth2User.getAttributes());
-        log.info("oAuth2UserInfo:{}",oAuth2UserInfo.toString());
 
         Member member = memberRepository.findByEmail(oAuth2UserInfo.getEmail()).orElseGet(()-> memberRepository.save(oAuth2UserInfo.toEntity()));
-        log.info("member:{}", member.toString());
 
         return new CustomUserDetails(member, oAuth2User.getAttributes());
     }

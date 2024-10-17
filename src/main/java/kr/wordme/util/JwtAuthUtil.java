@@ -1,6 +1,9 @@
 package kr.wordme.util;
 
 import io.jsonwebtoken.Claims;
+import kr.wordme.exception.ErrorCode;
+import kr.wordme.exception.member.MemberException;
+import kr.wordme.exception.token.TokenException;
 import kr.wordme.model.dto.JwtDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -24,13 +27,22 @@ public class JwtAuthUtil {
         return claims != null;
     }
     //    재발급용
-    public boolean validateToken(JwtDTO jwtDTO) {
-        if(!StringUtils.hasText(jwtDTO.getAccessToken()) || !StringUtils.hasText(jwtDTO.getRefreshToken())) return false;
+    public String validateToken(JwtDTO jwtDTO) {
+        if(!StringUtils.hasText(jwtDTO.getAccessToken()) || !StringUtils.hasText(jwtDTO.getRefreshToken())) {
+            throw new NullPointerException("no jwt parameter");
+        }
 
         Claims accessClaims = jwtUtil.getClaims(jwtDTO.getAccessToken());
         Claims refreshClaims = jwtUtil.getClaims(jwtDTO.getRefreshToken());
 
-        return accessClaims != null && refreshClaims != null && jwtUtil.getSubject(accessClaims).equals(jwtUtil.getSubject(refreshClaims));
+        if(accessClaims != null && refreshClaims != null && jwtUtil.getSubject(accessClaims).equals(jwtUtil.getSubject(refreshClaims))) {
+            return jwtUtil.createNewAccessToken(refreshClaims);
+        } else {
+            throw new TokenException(
+                    ErrorCode.NOT_EXIST_TOKEN.getStatus(),
+                    ErrorCode.NOT_EXIST_TOKEN.getMessage()
+            );
+        }
     }
     public Authentication getAUthentication(String token) {
         Claims claims = jwtUtil.getClaims(token);
