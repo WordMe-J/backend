@@ -18,7 +18,7 @@ import java.util.UUID;
 
 @Entity
 @Builder
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Member implements UserDetails {
     @Id
