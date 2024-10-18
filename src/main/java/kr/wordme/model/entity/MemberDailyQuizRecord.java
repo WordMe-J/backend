@@ -39,6 +39,6 @@ public class MemberDailyQuizRecord {
 	@Column(name = "submitted_answer")
 	private Integer submittedAnswer;
 
-	@Column(name = "correct_sign", columnDefinition = "TINYINT(1)")
+	@Column(name = "correct_sign", columnDefinition = "TINYINT(1)", nullable = false)
 	private Boolean correctSign;
 }
