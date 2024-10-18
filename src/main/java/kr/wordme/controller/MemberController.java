@@ -2,11 +2,9 @@ package kr.wordme.controller;
 
 import jakarta.mail.MessagingException;
 import jakarta.servlet.http.Cookie;
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import kr.wordme.common.CustomResponseMessage;
 import kr.wordme.filter.JwtFilter;
-import kr.wordme.model.dto.JwtDTO;
 import kr.wordme.model.dto.request.SignupRequestDTO;
 import kr.wordme.model.dto.response.MemberInfoResponseDTO;
 import kr.wordme.model.dto.response.VerificationEmailResponseDTO;
@@ -15,14 +13,10 @@ import kr.wordme.service.EmailService;
 import kr.wordme.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
-
-import java.security.Principal;
-import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
@@ -80,11 +74,18 @@ public class MemberController {
     public ResponseEntity<Object> sendEmail(@RequestParam("email") String email) throws MessagingException {
         memberService.duplicatedEmail(email); //메일 중복
         mailService.sendEmail(email); //검증 링크 전송
-        /**
-         * 1. 검증 링크 클릭 시 회원가입 화면으로 리다이렉트
-         * 2. /verify endpoint 에서 이메일 토큰 유효한지 검증 (10분으로 설정)
-         * 3. 이메일 토큰이 유효하면 true 로 응답
-         * **/
+          /*
+           * 1. 검증 링크 클릭 시 회원가입 화면으로 리다이렉트
+           * 2. /verify endpoint 에서 이메일 토큰 유효한지 검증 (10분으로 설정)
+           * 3. 이메일 토큰이 유효하면 true 로 응답
+           */
+
+        /*
+          1. 이메일 sender 누르는 순간 랜덤 숫자 6개 보냄
+          2. 랜덤 숫자 6개를 클라이언트 페이지에서 가지고 있음
+          3. 이메일의 숫자 6개와 클라이언트 페이지의 숫자를 비교
+          4. 동일하다면 이메일 검증 완료
+         */
 
 //        temp : postman 사용으로 링크 클릭하면 boolean 담긴 dto 반환하도록 구현
         return ResponseEntity.ok().body(new CustomResponseMessage("success to send email"));
