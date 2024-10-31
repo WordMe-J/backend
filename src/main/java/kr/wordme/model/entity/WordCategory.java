@@ -10,6 +10,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -17,6 +19,8 @@ import lombok.NoArgsConstructor;
 @Table(name = "word_category")
 @NoArgsConstructor
 @Getter
+@Builder
+@AllArgsConstructor
 public class WordCategory {
 
 	@Id
@@ -28,4 +32,10 @@ public class WordCategory {
 
 	@OneToMany(mappedBy = "wordCategory", fetch = FetchType.LAZY)
 	private List<WordNote> wordNotes;
+
+	public static WordCategory of(String categoryName) {
+		return WordCategory.builder()
+				.categoryName(categoryName)
+				.build();
+	}
 }

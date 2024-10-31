@@ -9,13 +9,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name = "word_note_word_meaning")
 @NoArgsConstructor
 @Getter
+@Builder
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class WordNoteWordMeaning {
 
 	@Id
@@ -28,4 +29,11 @@ public class WordNoteWordMeaning {
 
 	@Column(name = "meaning")
 	private String meaning;
+
+	public static WordNoteWordMeaning of(WordNoteWord wordNoteWord, String meaning) {
+		return WordNoteWordMeaning.builder()
+				.wordNoteWord(wordNoteWord)
+				.meaning(meaning)
+				.build();
+	}
 }

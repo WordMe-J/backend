@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 import java.util.List;
 import java.util.UUID;
 
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -16,13 +17,13 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "word_note")
 @NoArgsConstructor
 @Getter
+@Builder
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class WordNote {
 
 	@Id
@@ -65,4 +66,16 @@ public class WordNote {
 		orphanRemoval = true
 	)
 	private List<WordNoteWord> wordNoteWords;
+
+	public static WordNote of(Member initialCreator, Member owner, WordCategory wordCategory, WordNote forkedNote,String title) {
+		return WordNote.builder()
+				.id(UUID.randomUUID())
+				.deleteSign(false)
+				.initialCreator(initialCreator)
+				.owner(owner)
+				.wordCategory(wordCategory)
+				.forkedWordNote(forkedNote)
+				.title(title)
+				.build();
+	}
 }

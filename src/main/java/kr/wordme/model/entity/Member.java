@@ -3,6 +3,8 @@ package kr.wordme.model.entity;
 import java.sql.Timestamp;
 import java.util.UUID;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import org.hibernate.annotations.CreationTimestamp;
 
 import jakarta.persistence.Column;
@@ -16,6 +18,8 @@ import lombok.NoArgsConstructor;
 @Table(name = "member")
 @NoArgsConstructor
 @Getter
+@AllArgsConstructor
+@Builder
 public class Member {
 
 	@Id
@@ -43,4 +47,15 @@ public class Member {
 	@Column(name = "daily_quiz_subscribed_at")
 	private Timestamp dailyQuizSubscribedAt;
 
+	public static Member of(String email, String nickname, String password) {
+		return Member.builder()
+				.id(UUID.randomUUID())
+				.email(email)
+				.nickname(nickname)
+				.password(password)
+				.isDeleted(false)
+				.isDailyQuizSubscribed(false)
+				.dailyQuizSubscribedAt(null)
+				.build();
+	}
 }

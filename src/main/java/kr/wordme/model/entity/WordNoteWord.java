@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 import java.util.Set;
 import java.util.UUID;
 
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import jakarta.persistence.CascadeType;
@@ -15,13 +16,13 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "word_note_word")
 @NoArgsConstructor
 @Getter
+@Builder
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class WordNoteWord {
 
 	@Id
@@ -54,4 +55,13 @@ public class WordNoteWord {
 		orphanRemoval = true
 	)
 	private Set<WordNoteWordTag> wordNoteWordTags;
+
+	public static WordNoteWord of(WordNote wordNote, Word word) {
+		return WordNoteWord.builder()
+				.id(UUID.randomUUID())
+				.wordNote(wordNote)
+				.word(word)
+				.build();
+	}
+
 }
