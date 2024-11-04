@@ -49,7 +49,7 @@ public class OAuth2UserInfo {
                 .password(password)
                 .nickname(nickname)
                 .email(email)
-                .is_deleted(false)
+                .isDeleted(false)
                 .build();
     }
 }
