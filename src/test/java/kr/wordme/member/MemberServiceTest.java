@@ -29,11 +29,11 @@ public class MemberServiceTest {
     @Test
     @DisplayName("검증되지 않은 이메일로 회원가입")
     public void testSignUp_Failure_VerificationNotPassed() {
-//        given
-        SignupRequestDTO signupRequestDTO = SignupRequestDTO.create("test@example.com","1234","test",false);
-//        when
+        // given
+        SignupRequestDTO signupRequestDTO = SignupRequestDTO.create("test@example.com", "1234", "test", false);
+        // when
         Member result = memberService.signUp(signupRequestDTO);
-//        then
+        // then
         assertNull(result);
         verify(memberRepository, never()).save(any(Member.class));
     }
@@ -44,5 +44,3 @@ public class MemberServiceTest {
 
     }
 }
-
-
