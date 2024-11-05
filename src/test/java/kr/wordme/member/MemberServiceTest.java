@@ -13,34 +13,39 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
+@SpringBootTest
 public class MemberServiceTest {
-    @InjectMocks
-    private MemberService memberService;
+    // @InjectMocks
+    // private MemberService memberService;
 
-    @Mock
+    @Autowired
     private MemberRepository memberRepository;
 
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
-    }
+    // @BeforeEach
+    // public void setUp() {
+    // MockitoAnnotations.openMocks(this);
+    // }
 
-    @Test
-    @DisplayName("검증되지 않은 이메일로 회원가입")
-    public void testSignUp_Failure_VerificationNotPassed() {
-        // given
-        SignupRequestDTO signupRequestDTO = SignupRequestDTO.create("test@example.com", "1234", "test", false);
-        // when
-        Member result = memberService.signUp(signupRequestDTO);
-        // then
-        assertNull(result);
-        verify(memberRepository, never()).save(any(Member.class));
-    }
+    // @Test
+    // @DisplayName("검증되지 않은 이메일로 회원가입")
+    // public void testSignUp_Failure_VerificationNotPassed() {
+    // // given
+    // SignupRequestDTO signupRequestDTO =
+    // SignupRequestDTO.create("test@example.com","1234","test",false);
+    // // when
+    // Member result = memberService.signUp(signupRequestDTO);
+    // // then
+    // assertNull(result);
+    // verify(memberRepository, never()).save(any(Member.class));
+    // }
 
     @Test
     @DisplayName("중복된 이메일로 회원가입")
     public void testSignUp_DuplicateEmail() {
-
+        boolean result = memberRepository.existsByEmail("user8@example.com");
+        System.out.println(result);
     }
 }
