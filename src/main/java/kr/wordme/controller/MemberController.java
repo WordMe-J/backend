@@ -5,6 +5,8 @@ import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import kr.wordme.common.ApiResponse;
 import kr.wordme.common.CustomResponseMessage;
+import kr.wordme.exception.member.DuplicateException;
+import kr.wordme.exception.member.InvalidParamException;
 import kr.wordme.filter.JwtFilter;
 import kr.wordme.model.dto.request.SignupRequestDTO;
 import kr.wordme.model.dto.response.MemberInfoResponseDTO;
@@ -14,17 +16,18 @@ import kr.wordme.service.EmailService;
 import kr.wordme.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import java.util.Optional;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.util.ObjectUtils;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
 @RequiredArgsConstructor
+@Validated
 @RequestMapping("/members")
 @Slf4j
 public class MemberController {
@@ -111,27 +114,25 @@ public class MemberController {
     }
 
     @GetMapping("/exists/email")
-    public ResponseEntity<ApiResponse<Object>> existsByEmail(
-            @RequestParam(required = true, name = "email") String email) {
-        boolean result = memberService.existsByEmail(email);
-        if (result) {
-            return ResponseEntity.status(HttpStatus.CONFLICT)
-                    .body(ApiResponse.of(HttpStatus.CONFLICT, result));
-        } else {
-            return ResponseEntity.ok().body(ApiResponse.ok(result));
-        }
+    public ResponseEntity<ApiResponse<Boolean>> existsByEmail(
+            @RequestParam(name = "email") String email) {
+        Optional.ofNullable(email).filter(e -> e != null && !e.isBlank())
+                .orElseThrow(() -> new InvalidParamException(HttpStatus.BAD_REQUEST, "email"));
+
+        return Optional.of(memberService.existsByEmail(email)).filter(result -> !result)
+                .map(result -> ResponseEntity.ok().body(ApiResponse.ok(result)))
+                .orElseThrow(() -> new DuplicateException(HttpStatus.CONFLICT, "Duplicate email"));
     }
 
     @GetMapping("/exists/nickname")
-    public ResponseEntity<ApiResponse<Object>> existsByNickname(
-            @RequestParam(required = true, name = "nickname") String nickname) {
-        boolean result = memberService.existsByNickname(nickname);
-        if (result) {
-            return ResponseEntity.status(HttpStatus.CONFLICT)
-                    .body(ApiResponse.of(HttpStatus.CONFLICT, result));
-        } else {
-            return ResponseEntity.ok().body(ApiResponse.ok(result));
-        }
+    public ResponseEntity<ApiResponse<Boolean>> existsByNickname(
+            @RequestParam(name = "nickname") String nickname) {
+        Optional.ofNullable(nickname).filter(e -> e != null && !e.isBlank())
+                .orElseThrow(() -> new InvalidParamException(HttpStatus.BAD_REQUEST, "nickname"));
+
+        return Optional.of(memberService.existsByNickname(nickname)).filter(result -> !result)
+                .map(result -> ResponseEntity.ok().body(ApiResponse.ok(result)))
+                .orElseThrow(() -> new DuplicateException(HttpStatus.CONFLICT, "Duplicate email"));
     }
 
 }
