@@ -116,23 +116,23 @@ public class MemberController {
     @GetMapping("/exists/email")
     public ResponseEntity<ApiResponse<Boolean>> existsByEmail(
             @RequestParam(name = "email") String email) {
-        Optional.ofNullable(email).filter(e -> e != null && !e.isBlank())
+        Optional.ofNullable(email).filter(e -> !e.isBlank())
                 .orElseThrow(() -> new InvalidParamException(HttpStatus.BAD_REQUEST, "email"));
 
         return Optional.of(memberService.existsByEmail(email)).filter(result -> !result)
                 .map(result -> ResponseEntity.ok().body(ApiResponse.ok(result)))
-                .orElseThrow(() -> new DuplicateException(HttpStatus.CONFLICT, "Duplicate email"));
+                .orElseThrow(() -> new DuplicateException(HttpStatus.CONFLICT, "email"));
     }
 
     @GetMapping("/exists/nickname")
     public ResponseEntity<ApiResponse<Boolean>> existsByNickname(
             @RequestParam(name = "nickname") String nickname) {
-        Optional.ofNullable(nickname).filter(e -> e != null && !e.isBlank())
+        Optional.ofNullable(nickname).filter(e -> !e.isBlank())
                 .orElseThrow(() -> new InvalidParamException(HttpStatus.BAD_REQUEST, "nickname"));
 
         return Optional.of(memberService.existsByNickname(nickname)).filter(result -> !result)
                 .map(result -> ResponseEntity.ok().body(ApiResponse.ok(result)))
-                .orElseThrow(() -> new DuplicateException(HttpStatus.CONFLICT, "Duplicate email"));
+                .orElseThrow(() -> new DuplicateException(HttpStatus.CONFLICT, "nickname"));
     }
 
 }

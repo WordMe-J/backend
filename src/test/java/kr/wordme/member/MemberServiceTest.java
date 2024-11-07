@@ -18,29 +18,26 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class MemberServiceTest {
-    // @InjectMocks
-    // private MemberService memberService;
+    @InjectMocks
+    private MemberService memberService;
 
     @Autowired
     private MemberRepository memberRepository;
 
-    // @BeforeEach
-    // public void setUp() {
-    // MockitoAnnotations.openMocks(this);
-    // }
+    @BeforeEach
+    public void setUp() {
+        MockitoAnnotations.openMocks(this);
+    }
 
-    // @Test
-    // @DisplayName("검증되지 않은 이메일로 회원가입")
-    // public void testSignUp_Failure_VerificationNotPassed() {
-    // // given
-    // SignupRequestDTO signupRequestDTO =
-    // SignupRequestDTO.create("test@example.com","1234","test",false);
-    // // when
-    // Member result = memberService.signUp(signupRequestDTO);
-    // // then
-    // assertNull(result);
-    // verify(memberRepository, never()).save(any(Member.class));
-    // }
+    @Test
+    @DisplayName("검증되지 않은 이메일로 회원가입")
+    public void testSignUp_Failure_VerificationNotPassed() {
+        SignupRequestDTO signupRequestDTO =
+                SignupRequestDTO.create("test@example.com", "1234", "test", false);
+        Member result = memberService.signUp(signupRequestDTO);
+        assertNull(result);
+        verify(memberRepository, never()).save(any(Member.class));
+    }
 
     @Test
     @DisplayName("중복된 이메일로 회원가입")

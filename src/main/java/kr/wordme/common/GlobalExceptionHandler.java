@@ -32,7 +32,6 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ResponseBody
     public ApiResponse<Object> handle(InvalidParamException ex) {
-        String msg = "Parameter " + ex.getMessage() + " cannot be null or empty";
-        return ApiResponse.of(HttpStatus.BAD_REQUEST, msg, null);
+        return ApiResponse.of(HttpStatus.BAD_REQUEST, ex.getMessage(), null);
     }
 }
