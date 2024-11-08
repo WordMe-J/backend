@@ -26,7 +26,8 @@ public class JwtFilter extends OncePerRequestFilter {
     private final JwtAuthUtil jwtAuthUtil;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
+            FilterChain filterChain) throws ServletException, IOException {
         JwtDTO tokens = resolveTokenFromRequest(request);
         if (ObjectUtils.isEmpty(tokens)) {
             filterChain.doFilter(request, response);
@@ -39,13 +40,13 @@ public class JwtFilter extends OncePerRequestFilter {
         } else {
             String newAccessToken = jwtAuthUtil.validateToken(tokens);
             if (!StringUtils.hasText(newAccessToken)) {
-//                new Access Token 이 null 일 때 -> refresh Token 이 만료되었을 때
-//                access_token, refresh_token 삭제
+                // new Access Token 이 null 일 때 -> refresh Token 이 만료되었을 때
+                // access_token, refresh_token 삭제
                 Cookie[] deleteCookies = cookieDelete();
                 for (Cookie deleteCookie : deleteCookies) {
                     response.addCookie(deleteCookie);
                 }
-//                refresh token 만료 되었을 때 달린 쿠키들을 삭제하고 index page 로 리다이렉트
+                // refresh token 만료 되었을 때 달린 쿠키들을 삭제하고 index page 로 리다이렉트
                 response.sendRedirect("/");
             }
 
@@ -69,7 +70,7 @@ public class JwtFilter extends OncePerRequestFilter {
         refreshDeleteCookie.setMaxAge(0);
         refreshDeleteCookie.setPath("/");
 
-        return new Cookie[]{accessDeleteCookie, refreshDeleteCookie};
+        return new Cookie[] {accessDeleteCookie, refreshDeleteCookie};
     }
 
     private JwtDTO resolveTokenFromRequest(HttpServletRequest request) {

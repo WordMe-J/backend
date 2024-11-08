@@ -26,12 +26,8 @@ public class MemberService implements UserDetailsService {
     private final JwtUtil jwtUtil;
 
     public Member findByEmail(String email) {
-        return memberRepository.findByEmail(email).orElseThrow(
-                () -> new MemberNonExistentException(
-                        ErrorCode.NOT_EXIST_USER.getStatus(),
-                        ErrorCode.NOT_EXIST_USER.getMessage()
-                )
-        );
+        return memberRepository.findByEmail(email).orElseThrow(() -> new MemberNonExistentException(
+                ErrorCode.NOT_EXIST_USER.getStatus(), ErrorCode.NOT_EXIST_USER.getMessage()));
     }
 
     @Override
@@ -41,10 +37,8 @@ public class MemberService implements UserDetailsService {
 
     public void duplicatedEmail(String email) {
         if (memberRepository.existsByEmail(email)) {
-            throw new DuplicateEmailException(
-                    ErrorCode.DUPLICATE_EMAIL.getStatus(),
-                    ErrorCode.DUPLICATE_EMAIL.getMessage()
-            );
+            throw new DuplicateEmailException(ErrorCode.DUPLICATE_EMAIL.getStatus(),
+                    ErrorCode.DUPLICATE_EMAIL.getMessage());
         }
     }
 
@@ -63,16 +57,24 @@ public class MemberService implements UserDetailsService {
 
         if (!passwordEncoder.matches(dto.getPassword(), member.getPassword())) {
             throw new BadCredentialsException("wrong password");
-//            비번 틀렸을 때 spring security err 로 넘김
+            // 비번 틀렸을 때 spring security err 로 넘김
         }
         JwtDTO jwtDTO = jwtUtil.createToken(member.getUsername(), "ROLE_USER");
         Cookie accessToken = new Cookie("access_token", jwtDTO.getAccessToken());
         Cookie refreshToken = new Cookie("refresh_token", jwtDTO.getRefreshToken());
-        return new Cookie[]{accessToken, refreshToken};
+        return new Cookie[] {accessToken, refreshToken};
     }
 
     public boolean verificationEmail(String emailToken) {
         Claims claims = jwtUtil.getClaims(emailToken);
         return claims != null;
+    }
+
+    public boolean existsByEmail(String email) {
+        return memberRepository.existsByEmail(email);
+    }
+
+    public boolean existsByNickname(String nickname) {
+        return memberRepository.existsByNickname(nickname);
     }
 }
