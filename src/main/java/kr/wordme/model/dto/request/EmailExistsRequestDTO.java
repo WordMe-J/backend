@@ -5,12 +5,12 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 
 @Getter
-public class NicknameExistsRequestDTO {
+public class EmailExistsRequestDTO {
     @NotEmpty
     @NotNull
-    private String nickname;
+    private String email;
 
-    public NicknameExistsRequestDTO(String nickname) {
-        this.nickname = nickname;
+    public EmailExistsRequestDTO(String email) {
+        this.email = email;
     }
 }

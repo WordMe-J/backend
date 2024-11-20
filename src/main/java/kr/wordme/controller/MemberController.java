@@ -3,11 +3,14 @@ package kr.wordme.controller;
 import jakarta.mail.MessagingException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 import kr.wordme.common.ApiResponse;
 import kr.wordme.common.CustomResponseMessage;
 import kr.wordme.exception.member.DuplicateException;
 import kr.wordme.exception.member.InvalidParamException;
 import kr.wordme.filter.JwtFilter;
+import kr.wordme.model.dto.request.EmailExistsRequestDTO;
+import kr.wordme.model.dto.request.NicknameExistsRequestDTO;
 import kr.wordme.model.dto.request.SignupRequestDTO;
 import kr.wordme.model.dto.response.MemberInfoResponseDTO;
 import kr.wordme.model.dto.response.VerificationEmailResponseDTO;
@@ -113,26 +116,22 @@ public class MemberController {
         return ResponseEntity.ok().body(new CustomResponseMessage("logout success"));
     }
 
+    @Validated
     @GetMapping("/exists/email")
     public ResponseEntity<ApiResponse<Boolean>> existsByEmail(
-            @RequestParam(name = "email") String email) {
-        Optional.ofNullable(email).filter(e -> !e.isBlank())
-                .orElseThrow(() -> new InvalidParamException(HttpStatus.BAD_REQUEST, "email"));
-
-        return Optional.of(memberService.existsByEmail(email)).filter(result -> !result)
+            @Valid EmailExistsRequestDTO emailExistsRequestDTO) {
+        return Optional.of(memberService.existsByEmail(emailExistsRequestDTO.getEmail())).filter(result -> !result)
                 .map(result -> ResponseEntity.ok().body(ApiResponse.ok(result)))
                 .orElseThrow(() -> new DuplicateException(HttpStatus.CONFLICT, "email"));
     }
 
+    @Validated
     @GetMapping("/exists/nickname")
     public ResponseEntity<ApiResponse<Boolean>> existsByNickname(
-            @RequestParam(name = "nickname") String nickname) {
-        Optional.ofNullable(nickname).filter(e -> !e.isBlank())
-                .orElseThrow(() -> new InvalidParamException(HttpStatus.BAD_REQUEST, "nickname"));
-
-        return Optional.of(memberService.existsByNickname(nickname)).filter(result -> !result)
+            @Valid NicknameExistsRequestDTO nicknameExistsRequestDTO) {
+        return Optional.of(memberService.existsByNickname(nicknameExistsRequestDTO.getNickname()))
+                .filter(result -> !result)
                 .map(result -> ResponseEntity.ok().body(ApiResponse.ok(result)))
                 .orElseThrow(() -> new DuplicateException(HttpStatus.CONFLICT, "nickname"));
     }
-
 }
