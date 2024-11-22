@@ -69,7 +69,7 @@ public class Member implements UserDetails {
         return !isDeleted;
     }
 
-    public static Member newInstance(SignupRequestDTO dto, String encodedPassword) {
+    public static Member create(SignupRequestDTO dto, String encodedPassword) {
         return Member.builder()
                 .id(UUID.randomUUID())
                 .email(dto.getEmail())

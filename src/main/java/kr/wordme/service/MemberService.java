@@ -4,9 +4,11 @@ import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.Cookie;
 import kr.wordme.exception.ErrorCode;
 import kr.wordme.exception.member.DuplicateEmailException;
+import kr.wordme.exception.member.MemberException;
 import kr.wordme.exception.member.MemberNonExistentException;
 import kr.wordme.model.dto.JwtDTO;
 import kr.wordme.model.dto.request.SignupRequestDTO;
+import kr.wordme.model.dto.response.MemberInfoResponseDTO;
 import kr.wordme.model.entity.Member;
 import kr.wordme.repository.MemberRepository;
 import kr.wordme.util.JwtUtil;
@@ -17,6 +19,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 @Service
 @RequiredArgsConstructor
@@ -48,7 +51,7 @@ public class MemberService implements UserDetailsService {
         }
         this.duplicatedEmail(signupRequestDTO.getEmail());
         String encodedPassword = passwordEncoder.encode(signupRequestDTO.getPassword());
-        return memberRepository.save(Member.newInstance(signupRequestDTO, encodedPassword));
+        return memberRepository.save(Member.create(signupRequestDTO, encodedPassword));
     }
 
 
