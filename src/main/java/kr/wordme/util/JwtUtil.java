@@ -1,18 +1,15 @@
 package kr.wordme.util;
 
-import io.jsonwebtoken.*;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import jakarta.annotation.PostConstruct;
 import kr.wordme.model.dto.JwtDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
-import org.springframework.util.StringUtils;
 
 import java.util.Base64;
 import java.util.Date;
@@ -95,6 +92,7 @@ public class JwtUtil {
                     .parseClaimsJws(token)
                     .getBody();
         } catch (ExpiredJwtException e) {
+//            만료되었을 때는 null 반환 -> claims 가 null 일 때는 만료된 토큰일 때만
             claims = null;
         } catch (Exception e) {
             throw new BadCredentialsException("유효한 토큰이 아닙니다.");
