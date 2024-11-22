@@ -17,6 +17,6 @@ public class JwtDTO {
     private String refreshToken;
 
     public static JwtDTO create(Map<String, String> tokens) {
-        return new JwtDTO(tokens.get("accessToken"),tokens.get("refreshToken"));
+        return new JwtDTO(tokens.get("access_token"),tokens.get("refresh_token"));
     }
 }

@@ -3,13 +3,13 @@ package kr.wordme.model.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import kr.wordme.model.dto.request.SignupRequestDTO;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.sql.Timestamp;
 import java.util.Collection;
@@ -18,6 +18,7 @@ import java.util.UUID;
 
 @Entity
 @Builder
+@Table(name = "member")
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Member implements UserDetails {
@@ -25,25 +26,28 @@ public class Member implements UserDetails {
     @Column(name = "id")
     private UUID id;
 
-    @Column(name = "email")
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "nickname")
+    @Column(name = "nickname", nullable = false)
     @Getter
     private String nickname;
 
     @Column(name = "password")
     private String password;
 
-    @Column(name = "created_at")
-    private Timestamp created_at;
+    @Column(name = "created_at", updatable = false)
+    @CreationTimestamp
+    private Timestamp createdAt;
 
-    @Column(name = "is_deleted")
-    private Boolean is_deleted;
+    @Column(name = "is_deleted", columnDefinition = "TINYINT(1)", nullable = false)
+    private Boolean isDeleted;
 
-//    public void passwordEncode(PasswordEncoder passwordEncoder) {
-//        this.password = passwordEncoder.encode(this.password);
-//    }
+    @Column(name = "is_daily_quiz_subscribed", columnDefinition = "TINYINT(1)")
+    private Boolean isDailyQuizSubscribed;
+
+    @Column(name = "daily_quiz_subscribed_at")
+    private Timestamp dailyQuizSubscribedAt;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -72,7 +76,17 @@ public class Member implements UserDetails {
                 .email(dto.getEmail())
                 .nickname(dto.getNickname())
                 .password(encodedPassword)
-                .is_deleted(false)
+                .isDeleted(false)
+                .build();
+    }
+
+    public static Member of(Member member, boolean is_deleted) {
+        return Member.builder()
+                .id(member.id)
+                .email(member.email)
+                .password(member.password)
+                .nickname(member.nickname)
+                .isDeleted(is_deleted)
                 .build();
     }
 }
