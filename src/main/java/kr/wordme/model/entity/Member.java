@@ -60,7 +60,13 @@ public class Member implements UserDetails {
         return email;
     }
 
-    public static Member newInstance(SignupRequestDTO dto, String encodedPassword) {
+    @Override
+    public boolean isEnabled() {
+        return !isDeleted;
+    }
+
+
+    public static Member create(SignupRequestDTO dto, String encodedPassword) {
         return Member.builder()
                 .id(UUID.randomUUID())
                 .email(dto.getEmail())

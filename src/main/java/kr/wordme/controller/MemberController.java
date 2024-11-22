@@ -28,8 +28,8 @@ public class MemberController {
      * 1. 이메일 검증 (30분 유효한 임시 토큰으로 검증)
      * 2. 이메일 검증 결과(isVerify), 비밀번호 등등 담긴 signupRequestDTO 로 회원가입 진행
      * 3. 검증 결과가 true 일 때만 회원가입 완료
-     * <p/>
      * 4. 이메일, 비밀번호로 로그인 진행 access, refresh token cookie 에 담고 index redirect
+     * --------------
      * # oAuth2 회원가입 & 로그인
      * 1. DB에 같은 이메일 있는지 확인 후 DB에 저장
      * 2. 회원가입 / 로그인 성공 시 token cookie 에 담고 index redirect
@@ -40,8 +40,9 @@ public class MemberController {
     private final EmailService mailService;
     private final JwtFilter jwtFilter;
 
+
     @PostMapping("/sign-up")
-    public ResponseEntity<Object> signUp(@RequestBody SignupRequestDTO signupRequestDTO) {
+    public ResponseEntity<Boolean> signUp(@RequestBody SignupRequestDTO signupRequestDTO) {
         Member member = memberService.signUp(signupRequestDTO);
         boolean signUpResult = member != null;
 //        이메일 인증 o -> true, 이메일 인증 x -> false
@@ -49,29 +50,34 @@ public class MemberController {
     }
 
     @PostMapping("/sign-in")
-    public ResponseEntity<Object> SignIn(@RequestBody SignupRequestDTO signupRequestDTO, HttpServletResponse resp) {
+    public ResponseEntity<CustomResponseMessage> SignIn(@RequestBody SignupRequestDTO signupRequestDTO, HttpServletResponse resp) {
         Cookie[] cookies = memberService.signIn(signupRequestDTO);
+
+        CustomResponseMessage message;
+        if(ObjectUtils.isEmpty(cookies)) message = CustomResponseMessage.of("No account information");
+        else message = CustomResponseMessage.of("login success");
+
         for (Cookie cookie : cookies) {
             cookie.setPath("/");
             cookie.setHttpOnly(true);
             resp.addCookie(cookie);
         }
-        return ResponseEntity.ok().body(new CustomResponseMessage("login success"));
+        return ResponseEntity.ok().body(message);
     }
 
     @GetMapping("/info")
-    public ResponseEntity<Object> info(@AuthenticationPrincipal Member member) {
-        MemberInfoResponseDTO infoDTO = null;
-        if (!ObjectUtils.isEmpty(member)) {
-            infoDTO = MemberInfoResponseDTO.from(member);
-        }
-//        filter 에서 쿠키 확인 후 쿠키가 없다면 null 로 응답...
+    public ResponseEntity<MemberInfoResponseDTO> info(@AuthenticationPrincipal Member member) {
+        MemberInfoResponseDTO infoDTO = memberService.getMemberInfo(member);
+//        1. filter 에서 쿠키 확인 후 쿠키가 없다면 null 반환
+//        2. 회원 정보가 없다면 null 반환
+//        3. 탈퇴된 회원이면 jwt filter 에서 400 error 던짐 (member Exception)
+
 //        -> 클라이언트 로그인 필요하다는 alert 창
         return ResponseEntity.ok().body(infoDTO);
     }
 
     @PostMapping("/send-email")
-    public ResponseEntity<Object> sendEmail(@RequestParam("email") String email) throws MessagingException {
+    public ResponseEntity<CustomResponseMessage> sendEmail(@RequestParam("email") String email) throws MessagingException {
         memberService.duplicatedEmail(email); //메일 중복
         mailService.sendEmail(email); //검증 링크 전송
           /*
@@ -86,13 +92,11 @@ public class MemberController {
           3. 이메일의 숫자 6개와 클라이언트 페이지의 숫자를 비교
           4. 동일하다면 이메일 검증 완료
          */
-
-//        temp : postman 사용으로 링크 클릭하면 boolean 담긴 dto 반환하도록 구현
         return ResponseEntity.ok().body(new CustomResponseMessage("success to send email"));
     }
 
-    @GetMapping("/verify")
-    public ResponseEntity<Object> verificationEmail(@RequestParam("token") String token, @RequestParam("email") String email) {
+    @GetMapping("/verify-email-code")
+    public ResponseEntity<VerificationEmailResponseDTO> verificationEmail(@RequestParam("token") String token, @RequestParam("email") String email) {
         boolean verify = memberService.verificationEmail(token);
         VerificationEmailResponseDTO responseDTO = VerificationEmailResponseDTO.create(email, verify);
         return ResponseEntity.ok().body(responseDTO);
@@ -100,11 +104,17 @@ public class MemberController {
     }
 
     @GetMapping("/logout")
-    public ResponseEntity<Object> logout(HttpServletResponse resp) {
+    public ResponseEntity<CustomResponseMessage> logout(HttpServletResponse resp) {
         Cookie[] deleteCookies = jwtFilter.cookieDelete();
         for (Cookie deleteCookie : deleteCookies) {
             resp.addCookie(deleteCookie);
         }
         return ResponseEntity.ok().body(new CustomResponseMessage("logout success"));
+    }
+
+    @PostMapping("/delete-member")
+    public ResponseEntity<Member> deleteMember(@AuthenticationPrincipal Member member) {
+        Member deletedMember = memberService.deleteMember(member);
+        return ResponseEntity.ok().body(deletedMember);
     }
 }

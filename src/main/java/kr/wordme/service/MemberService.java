@@ -4,9 +4,11 @@ import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.Cookie;
 import kr.wordme.exception.ErrorCode;
 import kr.wordme.exception.member.DuplicateEmailException;
+import kr.wordme.exception.member.MemberException;
 import kr.wordme.exception.member.MemberNonExistentException;
 import kr.wordme.model.dto.JwtDTO;
 import kr.wordme.model.dto.request.SignupRequestDTO;
+import kr.wordme.model.dto.response.MemberInfoResponseDTO;
 import kr.wordme.model.entity.Member;
 import kr.wordme.repository.MemberRepository;
 import kr.wordme.util.JwtUtil;
@@ -17,6 +19,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 @Service
 @RequiredArgsConstructor
@@ -49,17 +52,25 @@ public class MemberService implements UserDetailsService {
     }
 
     public Member signUp(SignupRequestDTO signupRequestDTO) {
+//        validation 만들기
         if (!signupRequestDTO.isVerify()) {
             return null;
         }
         this.duplicatedEmail(signupRequestDTO.getEmail());
         String encodedPassword = passwordEncoder.encode(signupRequestDTO.getPassword());
-        return memberRepository.save(Member.newInstance(signupRequestDTO, encodedPassword));
+        return memberRepository.save(Member.create(signupRequestDTO, encodedPassword));
     }
 
 
     public Cookie[] signIn(SignupRequestDTO dto) {
         Member member = findByEmail(dto.getEmail());
+        if(!member.isEnabled()) {
+            throw new MemberException(
+//                    탈퇴한 계정으로 로그인 시도 시 bad request error 던짐
+                    ErrorCode.INVALID_ACCOUNT.getStatus(),
+                    ErrorCode.INVALID_ACCOUNT.getMessage()
+            );
+        }
 
         if (!passwordEncoder.matches(dto.getPassword(), member.getPassword())) {
             throw new BadCredentialsException("wrong password");
@@ -74,5 +85,18 @@ public class MemberService implements UserDetailsService {
     public boolean verificationEmail(String emailToken) {
         Claims claims = jwtUtil.getClaims(emailToken);
         return claims != null;
+    }
+
+    public Member deleteMember(Member member) {
+        Member deletedMember = Member.of(member, true);
+        return memberRepository.save(deletedMember);
+    }
+
+    public MemberInfoResponseDTO getMemberInfo(Member member) {
+        MemberInfoResponseDTO responseDTO = null;
+        if(!ObjectUtils.isEmpty(member)) {
+            if(member.isEnabled()) responseDTO = MemberInfoResponseDTO.from(member);
+        }
+        return responseDTO;
     }
 }

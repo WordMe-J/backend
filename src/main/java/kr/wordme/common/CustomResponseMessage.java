@@ -8,4 +8,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class CustomResponseMessage {
     private final Object message;
+
+    public static CustomResponseMessage of(String message) {
+        return new CustomResponseMessage(message);
+    }
 }
