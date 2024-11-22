@@ -1,6 +1,8 @@
 package kr.wordme.config;
 
 import kr.wordme.filter.JwtFilter;
+import kr.wordme.filter.JwtPresenceFilter;
+import kr.wordme.filter.JwtValidationFilter;
 import kr.wordme.repository.MemberRepository;
 import kr.wordme.service.OAuth2Service;
 import kr.wordme.util.OAuth2SuccessHandler;
@@ -23,42 +25,43 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
-        private final MemberRepository memberRepository;
-        private final OAuth2Service oauth2UserService;
-        private final JwtFilter jwtFilter;
-        private final OAuth2SuccessHandler loginSuccessHandler;
+    private final OAuth2Service oauth2UserService;
+    private final JwtFilter jwtFilter;
+    private final OAuth2SuccessHandler loginSuccessHandler;
+    private final JwtPresenceFilter jwtPresenceFilter;
+    private final JwtValidationFilter jwtValidationFilter;
 
-        @Bean
-        public WebSecurityCustomizer webSecurityCustomizer() {
-                return web -> web.ignoring().requestMatchers("/error", "/favicon.ico");
-        }
+    @Bean
+    public WebSecurityCustomizer webSecurityCustomizer() {
+        return web -> web.ignoring().requestMatchers("/error", "/favicon.ico");
+    }
 
-        @Bean
-        public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-                http.csrf(AbstractHttpConfigurer::disable)
-                                .httpBasic(AbstractHttpConfigurer::disable)
-                                .formLogin(config -> config.successHandler(loginSuccessHandler)
-                                                .permitAll())
-                                .logout(AbstractHttpConfigurer::disable)
-                                .sessionManagement(sm -> sm.sessionCreationPolicy(
-                                                SessionCreationPolicy.STATELESS))
-                                .authorizeHttpRequests(req -> req.requestMatchers(
-                                                // new AntPathRequestMatcher("/","/login"),
-                                                // new AntPathRequestMatcher("/members/*")
-                                                "/", "/members/*", "/**")
-                                                .permitAll().anyRequest().authenticated())
-                                .addFilterBefore(jwtFilter,
-                                                UsernamePasswordAuthenticationFilter.class)
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.csrf(AbstractHttpConfigurer::disable)
+                .httpBasic(AbstractHttpConfigurer::disable)
+                .formLogin(config -> config.successHandler(loginSuccessHandler)
+                        .permitAll())
+                .logout(AbstractHttpConfigurer::disable)
+                .sessionManagement(sm -> sm.sessionCreationPolicy(
+                        SessionCreationPolicy.STATELESS))
+                .authorizeHttpRequests(req -> req.requestMatchers(
+                                // new AntPathRequestMatcher("/","/login"),
+                                // new AntPathRequestMatcher("/members/*")
+                                "/", "/members/*", "/**")
+                        .permitAll().anyRequest().authenticated())
+                .addFilterBefore(jwtPresenceFilter,
+                        UsernamePasswordAuthenticationFilter.class)
+                .addFilterAfter(jwtValidationFilter, JwtPresenceFilter.class)
 
+                .headers(headerConfig -> headerConfig.frameOptions(
+                        HeadersConfigurer.FrameOptionsConfig::sameOrigin))
+                .oauth2Login(oauth2 -> oauth2.loginPage("/").userInfoEndpoint(
+                                userInfoEndpointConfig -> userInfoEndpointConfig
+                                        .userService(oauth2UserService))
+                        .successHandler(loginSuccessHandler))
 
-                                .headers(headerConfig -> headerConfig.frameOptions(
-                                                HeadersConfigurer.FrameOptionsConfig::sameOrigin))
-                                .oauth2Login(oauth2 -> oauth2.loginPage("/").userInfoEndpoint(
-                                                userInfoEndpointConfig -> userInfoEndpointConfig
-                                                                .userService(oauth2UserService))
-                                                .successHandler(loginSuccessHandler))
-
-                ;
-                return http.build();
-        }
+        ;
+        return http.build();
+    }
 }
