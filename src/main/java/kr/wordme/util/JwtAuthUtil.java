@@ -53,6 +53,13 @@ public class JwtAuthUtil {
         String email = jwtUtil.getSubject(claims);
         UserDetails userDetails = userDetailsService.loadUserByUsername(email);
 
+//        탈퇴한 계정 -> enable 속성이 false 인 계정에 access 시 error 반환
+        if(!userDetails.isEnabled()) {
+            throw new MemberException(
+                    ErrorCode.INVALID_ACCOUNT.getStatus(),
+                    ErrorCode.INVALID_ACCOUNT.getMessage()
+            );
+        }
         return new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
     }
 }
