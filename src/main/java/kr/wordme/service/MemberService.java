@@ -54,7 +54,12 @@ public class MemberService implements UserDetailsService {
 
     public Cookie[] signIn(SignupRequestDTO dto) {
         Member member = findByEmail(dto.getEmail());
-
+        if(!member.isEnabled()) {
+            throw new MemberException(
+                    ErrorCode.INVALID_ACCOUNT.getStatus(),
+                    ErrorCode.INVALID_ACCOUNT.getMessage()
+            );
+        }
         if (!passwordEncoder.matches(dto.getPassword(), member.getPassword())) {
             throw new BadCredentialsException("wrong password");
             // 비번 틀렸을 때 spring security err 로 넘김
@@ -76,5 +81,17 @@ public class MemberService implements UserDetailsService {
 
     public boolean existsByNickname(String nickname) {
         return memberRepository.existsByNickname(nickname);
+    }
+
+    public Member deleteMember(Member member) {
+        Member deletedMember = Member.of(member, true);
+        return memberRepository.save(deletedMember);
+    }
+    public MemberInfoResponseDTO getMemberInfo(Member member) {
+        MemberInfoResponseDTO responseDTO = null;
+        if(!ObjectUtils.isEmpty(member)) {
+            if(member.isEnabled()) responseDTO = MemberInfoResponseDTO.from(member);
+        }
+        return responseDTO;
     }
 }

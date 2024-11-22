@@ -135,4 +135,9 @@ public class MemberController {
                 .orElseThrow(() -> new DuplicateException(HttpStatus.CONFLICT, "nickname"));
     }
 
+    @PostMapping("/delete-member")
+    public ResponseEntity<ApiResponse<Member>> deleteMember(@AuthenticationPrincipal Member member) {
+        Member deleteMember = memberService.deleteMember(member);
+        return ResponseEntity.ok().body(ApiResponse.ok(deleteMember));
+    }
 }

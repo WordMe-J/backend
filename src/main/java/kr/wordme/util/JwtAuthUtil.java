@@ -53,6 +53,13 @@ public class JwtAuthUtil {
         String email = jwtUtil.getSubject(claims);
         UserDetails userDetails = userDetailsService.loadUserByUsername(email);
 
+        if(!userDetails.isEnabled()) {
+            throw new MemberException(
+                    ErrorCode.INVALID_ACCOUNT.getStatus(),
+                    ErrorCode.INVALID_ACCOUNT.getMessage()
+            );
+        }
+
         return new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
     }
 }
