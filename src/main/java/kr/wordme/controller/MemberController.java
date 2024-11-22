@@ -1,12 +1,11 @@
 package kr.wordme.controller;
 
-import jakarta.mail.MessagingException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import kr.wordme.common.ApiResponse;
-import kr.wordme.common.CustomResponseMessage;
 import kr.wordme.exception.member.DuplicateException;
 import kr.wordme.exception.member.InvalidParamException;
+import kr.wordme.exception.member.MemberException;
 import kr.wordme.filter.JwtFilter;
 import kr.wordme.model.dto.request.SignupRequestDTO;
 import kr.wordme.model.dto.response.MemberInfoResponseDTO;
@@ -16,13 +15,14 @@ import kr.wordme.service.EmailService;
 import kr.wordme.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import java.util.Optional;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.util.ObjectUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 
 @RestController
@@ -45,72 +45,67 @@ public class MemberController {
     private final JwtFilter jwtFilter;
 
     @PostMapping("/sign-up")
-    public ResponseEntity<Object> signUp(@RequestBody SignupRequestDTO signupRequestDTO) {
+    public ResponseEntity<ApiResponse<Boolean>> signUp(@RequestBody SignupRequestDTO signupRequestDTO) {
         Member member = memberService.signUp(signupRequestDTO);
         boolean signUpResult = member != null;
         // 이메일 인증 o -> true, 이메일 인증 x -> false
-        return ResponseEntity.ok().body(signUpResult);
+        return ResponseEntity.ok().body(ApiResponse.ok(signUpResult));
     }
 
     @PostMapping("/sign-in")
-    public ResponseEntity<Object> SignIn(@RequestBody SignupRequestDTO signupRequestDTO,
-            HttpServletResponse resp) {
+    public ResponseEntity<ApiResponse<Boolean>> SignIn(@RequestBody SignupRequestDTO signupRequestDTO,
+                                         HttpServletResponse resp) {
         Cookie[] cookies = memberService.signIn(signupRequestDTO);
         for (Cookie cookie : cookies) {
             cookie.setPath("/");
             cookie.setHttpOnly(true);
             resp.addCookie(cookie);
         }
-        return ResponseEntity.ok().body(new CustomResponseMessage("login success"));
+        boolean signInCookie = !ObjectUtils.isEmpty(cookies);
+        return ResponseEntity.ok().body(ApiResponse.ok(signInCookie));
     }
 
     @GetMapping("/info")
-    public ResponseEntity<Object> info(@AuthenticationPrincipal Member member) {
-        MemberInfoResponseDTO infoDTO = null;
-        if (!ObjectUtils.isEmpty(member)) {
-            infoDTO = MemberInfoResponseDTO.from(member);
-        }
-        // filter 에서 쿠키 확인 후 쿠키가 없다면 null 로 응답...
-        // -> 클라이언트 로그인 필요하다는 alert 창
-        return ResponseEntity.ok().body(infoDTO);
+    public ResponseEntity<ApiResponse<MemberInfoResponseDTO>> info(@AuthenticationPrincipal Member member) {
+        return Optional.ofNullable(member)
+                .map(MemberInfoResponseDTO::from)
+                .map(infoDTO -> ResponseEntity.ok().body(ApiResponse.ok(infoDTO)))
+                .orElseGet(() ->ResponseEntity.ok().body(ApiResponse.of(HttpStatus.NOT_FOUND, "Please Log in", null)));
     }
 
     @PostMapping("/send-email")
-    public ResponseEntity<Object> sendEmail(@RequestParam("email") String email)
-            throws MessagingException {
-        memberService.duplicatedEmail(email); // 메일 중복
-        mailService.sendEmail(email); // 검증 링크 전송
-        /*
-         * 1. 검증 링크 클릭 시 회원가입 화면으로 리다이렉트 2. /verify endpoint 에서 이메일 토큰 유효한지 검증 (10분으로 설정) 3. 이메일 토큰이
-         * 유효하면 true 로 응답
-         */
-
-        /*
-         * 1. 이메일 sender 누르는 순간 랜덤 숫자 6개 보냄 2. 랜덤 숫자 6개를 클라이언트 페이지에서 가지고 있음 3. 이메일의 숫자 6개와 클라이언트
-         * 페이지의 숫자를 비교 4. 동일하다면 이메일 검증 완료
-         */
-
-        // temp : postman 사용으로 링크 클릭하면 boolean 담긴 dto 반환하도록 구현
-        return ResponseEntity.ok().body(new CustomResponseMessage("success to send email"));
+    public ResponseEntity<ApiResponse<Boolean>> sendEmail(@RequestParam("email") String email) {
+        try {
+            return ResponseEntity.ok().body(ApiResponse.ok(mailService.sendEmail(email)));
+        } catch (MemberException e) {
+            return ResponseEntity.ok().body(ApiResponse.of(HttpStatus.BAD_REQUEST, "fail to send Email", false));
+        }
     }
 
     @GetMapping("/verify")
-    public ResponseEntity<Object> verificationEmail(@RequestParam("token") String token,
-            @RequestParam("email") String email) {
+    public ResponseEntity<ApiResponse<VerificationEmailResponseDTO>> verificationEmail(@RequestParam("token") String token,
+                                                    @RequestParam("email") String email) {
         boolean verify = memberService.verificationEmail(token);
         VerificationEmailResponseDTO responseDTO =
                 VerificationEmailResponseDTO.create(email, verify);
-        return ResponseEntity.ok().body(responseDTO);
+        return ResponseEntity.ok().body(ApiResponse.ok(responseDTO));
         // 이메일 토큰 검증 후 유효한 토큰이면 true 반환
     }
 
     @GetMapping("/logout")
-    public ResponseEntity<Object> logout(HttpServletResponse resp) {
+    public ResponseEntity<ApiResponse<Boolean>> logout(HttpServletResponse resp) {
         Cookie[] deleteCookies = jwtFilter.cookieDelete();
+        boolean cookieDeleted = true;
+
         for (Cookie deleteCookie : deleteCookies) {
-            resp.addCookie(deleteCookie);
+            try {
+                resp.addCookie(deleteCookie);
+            } catch (Exception e) {
+                cookieDeleted = false;
+                break;
+            }
         }
-        return ResponseEntity.ok().body(new CustomResponseMessage("logout success"));
+        return ResponseEntity.ok().body(ApiResponse.ok(cookieDeleted));
     }
 
     @GetMapping("/exists/email")

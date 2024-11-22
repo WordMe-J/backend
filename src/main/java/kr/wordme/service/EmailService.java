@@ -21,11 +21,12 @@ public class EmailService {
     private final JavaMailSender mailSender;
     private final JwtUtil jwtUtil;
 
-    public void sendEmail(String toEmail) throws MessagingException {
+    public boolean sendEmail(String toEmail) {
         String emailToken = jwtUtil.createEmailToken(toEmail);
         SimpleMailMessage emailForm = createEmailForm(toEmail, emailToken);
         try {
             mailSender.send(emailForm);
+            return true;
         } catch (MailException e) {
             throw new MemberException(
                     ErrorCode.FAIL_SEND_EMAIL.getStatus(),
