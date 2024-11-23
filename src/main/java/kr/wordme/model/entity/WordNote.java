@@ -26,6 +26,7 @@ import lombok.NoArgsConstructor;
 public class WordNote {
 
 	@Id
+	@Column(name = "id")
 	private UUID id;
 
 	@ManyToOne(fetch = FetchType.LAZY)

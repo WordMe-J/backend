@@ -23,6 +23,7 @@ import lombok.NoArgsConstructor;
 public class MemberMockExamRecord {
 
 	@Id
+	@Column(name = "id")
 	private UUID id;
 
 	@ManyToOne(fetch = FetchType.EAGER)

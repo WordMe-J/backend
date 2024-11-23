@@ -23,11 +23,11 @@ import lombok.NoArgsConstructor;
 public class DailyQuizWord {
 
 	@Id
+	@Column(name = "id")
 	private UUID id;
 
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "word_id")
-	private Word word;
+	@Column
+	private String word;
 
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "word_category_id")
