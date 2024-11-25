@@ -15,30 +15,30 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(
-	name = "member_daily_quiz_record",
+	name = "pronunciation_file",
 	uniqueConstraints = {
-		@UniqueConstraint(columnNames = {"member_id", "daily_quiz_id"})
+		@UniqueConstraint(columnNames = {"pronunciation_id", "pronunciation_category_id"})
 	}
 )
 @NoArgsConstructor
 @Getter
-public class MemberDailyQuizRecord {
+public class PronunciationFile {
 
 	@Id
 	@Column(name = "id")
 	private UUID id;
 
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "member_id")
-	private Member member;
+	@ManyToOne
+	@JoinColumn(name = "pronunciation_id")
+	private Pronunciation pronunciation;
 
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "daily_quiz_id")
-	private DailyQuizWord dailyQuizWord;
+	@JoinColumn(name = "pronunciation_category_id")
+	private PronunciationCategory pronunciationCategory;
 
-	@Column(name = "submitted_answer")
-	private Integer submittedAnswer;
+	@Column(name = "pronunciation_file_name", nullable = false)
+	private String pronunciationFileName;
 
-	@Column(name = "correct_sign", columnDefinition = "TINYINT(1)", nullable = false)
-	private Boolean correctSign;
+	@Column(name = "pronunciation_url", nullable = false)
+	private String pronunciationUrl;
 }

@@ -1,6 +1,5 @@
 package kr.wordme.model.entity;
 
-import java.sql.Timestamp;
 import java.util.List;
 import java.util.UUID;
 
@@ -9,38 +8,29 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "daily_quiz_word")
+@Table(name = "pronunciation")
 @NoArgsConstructor
 @Getter
-public class DailyQuizWord {
+public class Pronunciation {
 
 	@Id
 	@Column(name = "id")
 	private UUID id;
 
-	@Column
-	private String word;
-
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "word_category_id")
-	private WordCategory wordCategory;
-
-	@Column(name = "quiz_date")
-	private Timestamp quizDate;
+	@Column(name = "word_spelling", unique = true)
+	private String wordSpelling;
 
 	@OneToMany(
-		mappedBy = "dailyQuizWord",
+		mappedBy = "pronunciation",
 		fetch = FetchType.LAZY,
 		cascade = {CascadeType.PERSIST, CascadeType.REMOVE, CascadeType.MERGE},
 		orphanRemoval = true
 	)
-	private List<DailyQuizDistractor> dailyQuizDistractors;
+	private List<PronunciationFile> pronunciationFiles;
 }

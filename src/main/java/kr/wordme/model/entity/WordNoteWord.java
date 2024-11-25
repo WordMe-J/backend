@@ -33,7 +33,7 @@ public class WordNoteWord {
 
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "word_id")
-	private Word word;
+	private Pronunciation pronunciation;
 
 	@Column(name = "created_at", updatable = false)
 	@CreationTimestamp

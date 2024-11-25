@@ -22,6 +22,7 @@ import lombok.NoArgsConstructor;
 public class MockExamQuestion {
 
 	@Id
+	@Column(name = "id")
 	private UUID id;
 
 	@ManyToOne(fetch = FetchType.EAGER)

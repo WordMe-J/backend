@@ -24,6 +24,7 @@ import lombok.NoArgsConstructor;
 public class MockExam {
 
 	@Id
+	@Column(name = "id")
 	private UUID id;
 
 	@Column(name = "title")
