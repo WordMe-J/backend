@@ -30,7 +30,6 @@ public class OAuth2SuccessHandler implements AuthenticationSuccessHandler {
     private final JwtUtil jwtUtil;
 
     private RequestCache requestCache = new HttpSessionRequestCache();
-//    로그인 화면 이전 화면의 url 정보
     private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
 
     @Override
@@ -43,6 +42,8 @@ public class OAuth2SuccessHandler implements AuthenticationSuccessHandler {
             tokenCookie.setPath("/");
             response.addCookie(tokenCookie);
         }
+
+        log.info("loginSuccessHandler:{}",customUser);
 //        쿠키에 access, refresh 토큰 정보 담고 index redirect
         response.sendRedirect("/");
     }

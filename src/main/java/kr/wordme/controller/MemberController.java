@@ -48,7 +48,6 @@ public class MemberController {
     public ResponseEntity<ApiResponse<Boolean>> signUp(@RequestBody SignupRequestDTO signupRequestDTO) {
         Member member = memberService.signUp(signupRequestDTO);
         boolean signUpResult = member != null;
-        // 이메일 인증 o -> true, 이메일 인증 x -> false
         return ResponseEntity.ok().body(ApiResponse.ok(signUpResult));
     }
 
