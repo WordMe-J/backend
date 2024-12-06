@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * 토큰이 유효한지 검증하는 필터
  */
-@Component
+
 @RequiredArgsConstructor
 public class JwtValidationFilter extends OncePerRequestFilter {
     private final JwtAuthUtil jwtAuthUtil;

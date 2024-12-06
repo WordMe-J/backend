@@ -1,9 +1,7 @@
 package kr.wordme.config;
 
+import kr.wordme.filter.DebuggingFilter;
 import kr.wordme.filter.JwtFilter;
-import kr.wordme.filter.JwtPresenceFilter;
-import kr.wordme.filter.JwtValidationFilter;
-import kr.wordme.repository.MemberRepository;
 import kr.wordme.service.OAuth2Service;
 import kr.wordme.util.OAuth2SuccessHandler;
 import lombok.RequiredArgsConstructor;
@@ -15,52 +13,55 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
+import org.springframework.security.config.annotation.web.configurers.RequestCacheConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
-@EnableWebSecurity
+@EnableWebSecurity(debug = true)
 @RequiredArgsConstructor
 public class SecurityConfig {
     private final OAuth2Service oauth2UserService;
-    private final JwtFilter jwtFilter;
     private final OAuth2SuccessHandler loginSuccessHandler;
-    private final JwtPresenceFilter jwtPresenceFilter;
-    private final JwtValidationFilter jwtValidationFilter;
+    private final JwtFilter jwtFilter;
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
         return web -> web.ignoring().requestMatchers("/error", "/favicon.ico");
     }
 
+
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.csrf(AbstractHttpConfigurer::disable)
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+
+                .csrf(AbstractHttpConfigurer::disable)
                 .httpBasic(AbstractHttpConfigurer::disable)
                 .formLogin(config -> config.successHandler(loginSuccessHandler)
-                        .permitAll())
+                                .permitAll())
                 .logout(AbstractHttpConfigurer::disable)
                 .sessionManagement(sm -> sm.sessionCreationPolicy(
                         SessionCreationPolicy.STATELESS))
-                .authorizeHttpRequests(req -> req.requestMatchers(
-                                // new AntPathRequestMatcher("/","/login"),
-                                // new AntPathRequestMatcher("/members/*")
-                                "/", "/members/*", "/**")
-                        .permitAll().anyRequest().authenticated())
-                .addFilterBefore(jwtPresenceFilter,
+                .authorizeHttpRequests(req ->
+                        req.requestMatchers("/", "/**", "/members/*", "/login",
+                                        "/error", "/js/**", "favicon.ico", "/css/**", "/images/**")
+                                .permitAll().anyRequest().authenticated())
+                .addFilterBefore(jwtFilter,
                         UsernamePasswordAuthenticationFilter.class)
-                .addFilterAfter(jwtValidationFilter, JwtPresenceFilter.class)
-
+                .addFilterBefore(new DebuggingFilter(), UsernamePasswordAuthenticationFilter.class)
                 .headers(headerConfig -> headerConfig.frameOptions(
                         HeadersConfigurer.FrameOptionsConfig::sameOrigin))
-                .oauth2Login(oauth2 -> oauth2.loginPage("/").userInfoEndpoint(
+                .oauth2Login(oauth2 -> oauth2.loginPage("/login")
+                        .userInfoEndpoint(
                                 userInfoEndpointConfig -> userInfoEndpointConfig
                                         .userService(oauth2UserService))
                         .successHandler(loginSuccessHandler))
-
+                .exceptionHandling(exception -> exception
+                        .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED)))
+                .requestCache(RequestCacheConfigurer::disable)
         ;
         return http.build();
     }

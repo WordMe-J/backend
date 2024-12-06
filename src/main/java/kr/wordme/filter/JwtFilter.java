@@ -5,11 +5,17 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import kr.wordme.exception.member.InvalidParamException;
+import kr.wordme.exception.token.TokenException;
 import kr.wordme.model.dto.JwtDTO;
 import kr.wordme.util.JwtAuthUtil;
 import kr.wordme.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ObjectUtils;
@@ -20,18 +26,27 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
 @RequiredArgsConstructor
+@Component
+@Slf4j
 public class JwtFilter extends OncePerRequestFilter {
     private final JwtAuthUtil jwtAuthUtil;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
             FilterChain filterChain) throws ServletException, IOException {
+
         JwtDTO tokens = resolveTokenFromRequest(request);
+
         if (ObjectUtils.isEmpty(tokens)) {
-            filterChain.doFilter(request, response);
-            return;
+//            log.info("JWT Filter: 토큰이 없습니다.");
+//            SecurityContextHolder.getContext().setAuthentication(
+//                    new AnonymousAuthenticationToken("anonymousUser", "anonymous",
+//                            AuthorityUtils.createAuthorityList("ROLE_ANONYMOUS"))
+//            );
+//            filterChain.doFilter(request, response);
+//            return;
+
         }
 
         if (jwtAuthUtil.validateToken(tokens.getAccessToken())) {
