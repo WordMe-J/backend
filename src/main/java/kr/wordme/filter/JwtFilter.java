@@ -23,7 +23,9 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RequiredArgsConstructor
@@ -31,6 +33,8 @@ import java.util.Map;
 @Slf4j
 public class JwtFilter extends OncePerRequestFilter {
     private final JwtAuthUtil jwtAuthUtil;
+    private static final String ACCESS_TOKEN = "access_token";
+    private static final String REFRESH_TOKEN = "refresh_token";
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
@@ -39,14 +43,8 @@ public class JwtFilter extends OncePerRequestFilter {
         JwtDTO tokens = resolveTokenFromRequest(request);
 
         if (ObjectUtils.isEmpty(tokens)) {
-//            log.info("JWT Filter: 토큰이 없습니다.");
-//            SecurityContextHolder.getContext().setAuthentication(
-//                    new AnonymousAuthenticationToken("anonymousUser", "anonymous",
-//                            AuthorityUtils.createAuthorityList("ROLE_ANONYMOUS"))
-//            );
-//            filterChain.doFilter(request, response);
-//            return;
-
+            filterChain.doFilter(request, response);
+            return;
         }
 
         if (jwtAuthUtil.validateToken(tokens.getAccessToken())) {
@@ -65,7 +63,7 @@ public class JwtFilter extends OncePerRequestFilter {
                 response.sendRedirect("/");
             }
 
-            Cookie newCookie = new Cookie("access_token", newAccessToken);
+            Cookie newCookie = new Cookie(ACCESS_TOKEN, newAccessToken);
             newCookie.setHttpOnly(true);
             newCookie.setPath("/");
             response.addCookie(newCookie);
@@ -77,11 +75,11 @@ public class JwtFilter extends OncePerRequestFilter {
     }
 
     public Cookie[] cookieDelete() {
-        Cookie accessDeleteCookie = new Cookie("access_token", null);
+        Cookie accessDeleteCookie = new Cookie(ACCESS_TOKEN, null);
         accessDeleteCookie.setPath("/");
         accessDeleteCookie.setMaxAge(0);
 
-        Cookie refreshDeleteCookie = new Cookie("refresh_token", null);
+        Cookie refreshDeleteCookie = new Cookie(REFRESH_TOKEN, null);
         refreshDeleteCookie.setMaxAge(0);
         refreshDeleteCookie.setPath("/");
 
@@ -93,11 +91,11 @@ public class JwtFilter extends OncePerRequestFilter {
         Cookie[] cookies = request.getCookies();
         if (!ObjectUtils.isEmpty(cookies)) {
             for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("access_token")) {
-                    tokens.put("accessToken", cookie.getValue());
+                if (cookie.getName().equals(ACCESS_TOKEN)) {
+                    tokens.put(ACCESS_TOKEN, cookie.getValue());
                 }
-                if (cookie.getName().equals("refresh_token")) {
-                    tokens.put("refreshToken", cookie.getValue());
+                if (cookie.getName().equals(REFRESH_TOKEN)) {
+                    tokens.put(REFRESH_TOKEN, cookie.getValue());
                 }
             }
             JwtDTO jwtDTO = JwtDTO.create(tokens);
